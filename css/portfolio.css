@@ -1,0 +1,78 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+}
+
+/* Lefthand navigation bar */
+
+#leftbar{
+	position:fixed;
+	margin:0;
+	padding:0;
+	width:20%;
+	min-width:200px;
+	min-height:400px;
+	height:100%;
+	background: #262c31;
+}
+
+/* Navigation bars on bottom left side! */
+/* Change navbar::before color to edit highlight color! */
+
+#navbar{
+	list-style-type:none;
+}
+#navbar a{
+	color:#ffffff;
+	font: 150% 'PT Sans Narrow';
+	text-align:center;
+	letter-spacing:1px;
+	display:block;
+	padding:.7%;
+	position:fixed;
+	left:0;
+	margin:0;
+	width:20%;
+	min-width:200px;
+	height:6%;
+	min-height:20px;
+	text-decoration:none;
+	transition: height 1.5s;
+}
+#navbar a:hover{ height: 8%; }
+#navbar a::before{
+	display:block;
+  content:" ";
+  position:absolute;
+  z-index:-1;
+  background: #8a79a5; 
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0;
+}
+#navbar a:hover::before{ opacity:1; }
+
+#nav1 { bottom:24%; background: #2d3f44;}
+#nav2 { bottom:18%; background: #1a515e;}
+#nav3 { bottom:12%; background: #328275;}
+#nav4 { bottom:6%;  background: #88b990;}
+#nav5 { bottom:0;   background: #abcd9e;}
+
+
+/* name & profile picture */
+
+
+#profile{
+	display:block;
+	margin: 20% auto;
+	font-family:'PT Sans Narrow';
+	text-align:center;
+	color:#ffffff;
+	font-size:200%;
+	letter-spacing:2px;
+}
