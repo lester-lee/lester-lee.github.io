@@ -6,6 +6,10 @@ body{
 	margin:0;
 	height:100%;	
 	background: #262c31;
+	font-family: 'PT Sans Narrow';
+	color: #ffffff;
+	text-align:center;
+	letter-spacing:1px;
 }
 
 /* Background images */
@@ -15,7 +19,6 @@ body{
 	width:100%;
 	position:fixed;
 	overflow:hidden;
-	height:3000;	
 }
 
 #backgroundimage img{
@@ -49,7 +52,6 @@ body{
 	font: 150% 'PT Sans Narrow';
 	text-align:center;
 	letter-spacing:1px;
-	display:block;
 	padding:.7%;
 	position:fixed;
 	left:0;
@@ -82,6 +84,16 @@ body{
 #nav4 { bottom:30%;  background: #88b990;}
 #nav5 { bottom:24%;   background: #abcd9e;}
 
+#copyright{
+	position:fixed;
+	bottom:0;
+	left:0;
+	background: #262c31;
+	border-top-right-radius:5%;
+	width:20%;
+	min-width:240px;
+	z-index:10;
+}
 
 /* name & profile picture */
 
@@ -99,6 +111,11 @@ body{
 	color:#ffffff;
 	font-size:200%;
 	letter-spacing:2px;
+}
+
+#profile img{
+	width:auto;
+	height:auto;
 }
 
 /* scrollable right area! */
