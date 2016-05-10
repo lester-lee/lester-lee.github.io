@@ -30,12 +30,11 @@ body{
 
 #leftbar{
 	position:fixed;
-	top:25%;
+	top:25%; 
 	bottom:20%;
 	z-index:1;
 	padding:0;
 	width:20%;
-	min-width:240px;
 	background: #262c31;
 	border-top-right-radius: 5%;	
 	border-bottom-right-radius: 5%;
@@ -57,9 +56,7 @@ body{
 	left:0;
 	margin:0;
 	width:20%;
-	min-width:240px;
 	height:6%;
-	min-height:50px;
 	text-decoration:none;
 	transition: height 1.5s;
 }
@@ -111,10 +108,12 @@ body{
 	color:#ffffff;
 	font-size:200%;
 	letter-spacing:2px;
+	width:15%;
+	height:15%;
 }
 
 #profile img{
-	width:auto;
+	max-width:100%;
 	height:auto;
 }
 
