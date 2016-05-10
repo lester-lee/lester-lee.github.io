@@ -5,7 +5,7 @@
 body{
 	margin:0;
 	height:100%;	
-	background: #262c31;
+	background: #262c31 url("../images/main/bgtile.png") repeat fixed;
 	font-family: 'PT Sans Narrow';
 	color: #ffffff;
 	text-align:center;
@@ -35,7 +35,7 @@ body{
 	z-index:1;
 	padding:0;
 	width:20%;
-	background: #262c31;
+	background: #2f373e;
 	border-top-right-radius: 5%;	
 	border-bottom-right-radius: 5%;
 }
@@ -48,7 +48,8 @@ body{
 }
 #navbar a{
 	color:#ffffff;
-	font: 150% 'PT Sans Narrow';
+	font-size: 150%;
+	font-size: 1.5vw;
 	text-align:center;
 	letter-spacing:1px;
 	padding:.7%;
@@ -75,20 +76,19 @@ body{
 }
 #navbar a:hover::before{ opacity:1; }
 
-#nav1 { bottom:48%; background: #2d3f44;}
-#nav2 { bottom:42%; background: #1a515e;}
-#nav3 { bottom:36%; background: #328275;}
-#nav4 { bottom:30%;  background: #88b990;}
-#nav5 { bottom:24%;   background: #abcd9e;}
+#nav1 { bottom:48%; background: #235459;}
+#nav2 { bottom:42%; background: #306862;}
+#nav3 { bottom:36%; background: #44966d;}
+#nav4 { bottom:30%;  background: #64ae73;}
+#nav5 { bottom:24%;   background: #95ba7f;}
 
 #copyright{
 	position:fixed;
 	bottom:0;
 	left:0;
-	background: #262c31;
+	background: #2f373e;
 	border-top-right-radius:5%;
 	width:20%;
-	min-width:240px;
 	z-index:10;
 }
 
@@ -97,16 +97,16 @@ body{
 
 #profile{
 	display:block;
-	background: #262c31;	
+	background: #2f373e;	
 	border-top-right-radius: 5%;
 	z-index:2;
 	top: 10%;
 	padding:0px 30px 0px 10px;
 	position:fixed;
-	font-family:'PT Sans Narrow';
 	text-align:center;
 	color:#ffffff;
 	font-size:200%;
+	font-size:2vw;
 	letter-spacing:2px;
 	width:15%;
 	height:15%;
