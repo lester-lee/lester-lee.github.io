@@ -1,174 +1,166 @@
-*{
-	box-sizing:border-box;
+* {
+	box-sizing: border-box;
 }
-
-body{
-	margin:0;
-	height:100%;	
+body {
+	margin: 0;
+	height: 100%;
 	background: #2b3339 url("../images/main/bgtile.png") repeat fixed;
 	font-family: 'PT Sans Narrow';
 	color: #ffffff;
-	text-align:center;
-	letter-spacing:1px;	
-	overflow-x:hidden;
+	text-align: center;
+	letter-spacing: 1px;
+	overflow-x: hidden;
 }
 
 /* Lefthand navigation bar */
 
 nav {
-	position:fixed;
-	left:0;
-	width:16%;
-	height:100%;
+	position: fixed;
+	left: 0;
+	width: 16%;
+	height: 100%;
 }
 
 /* name & profile picture */
 
-header{
-	position:relative;
+header {
+	position: relative;
 	top: 5%;
-	text-align:center;
-	color:#ffffff;
-	font-size:200%;
-	font-size:2vw;
-	letter-spacing:2px;
-	
-	margin:auto;
-	width:12vw;
-	max-height:25vh;
+	text-align: center;
+	color: #ffffff;
+	font-size: 200%;
+	font-size: 2vw;
+	letter-spacing: 2px;
+	margin: auto;
+	width: 12vw;
+	max-height: 25vh;
 }
-
-header img{
-	max-width:12vw;
-	max-height:25vh;
-	margin:auto;
+header img {
+	max-width: 12vw;
+	max-height: 25vh;
+	margin: auto;
 }
 
 /* Navigation button images on left side!  */
-/* The images must be 64x64! */
 
-#navimgwrapper{
-	position:absolute;
-	z-index:3;
-	top: 0;	
-	max-width:7vh;
-	max-height:20vh;
-	padding:0;
-	
-	pointer-events:none;
+
+/* The images must be 55x55! */
+
+#navimgwrapper {
+	position: relative;
+	z-index: 3;
+	width: 60%;
+	top: -90%;
+	padding: 0;
+	pointer-events: none;
 }
-
-#navimgwrapper span{
+.navimg {
+	width: 7vh;
+	height: 7vh;
+	margin: auto;
 	margin-bottom: 2vh;
+	padding-top: 2%;
 }
-
-#navimgwrapper img{
-	max-width:7vh;
-	max-height:7vh;
-	image-rendering: pixelated;
+#navimgwrapper img {
+	max-width: 7vw;
+	max-height: 7vh;
 }
 
 /* Navigation buttons on left side! */
 
-#navbar{
-	list-style-type:none;
-	position:relative;
-	top:10vh;
-	left:-.3vw;
-	width:100%;
-	height:50%;
+#navbar {
+	list-style-type: none;
+	position: relative;
+	top: 10vh;
+	width: 100%;
+	height: 50%;
+	padding: 0;
 }
-
-#navbar li{
-	margin-bottom: 2vh;	
+#navbar li {
+	width: 12vw;
+	margin: auto;
 }
-
-#navbar a{
-	padding:15% 25%;
+#navbar a {
+	display: block;
+	height: 7vh;
+	width: 12vw;
+	border-radius: 2.5vw;
+	margin-bottom: 2vh;
+	padding: 1.5vh;
+	padding-left: 50%;
+	font-size: 1.5vw;
+	color: #2b3339;
+	text-align: left;
+	letter-spacing: 1px;
+	text-decoration: none;
 }
-
-#navbar a, #navbar li, #navimgwrapper span{	
-	display:block;
-	width:7vh;
-	height:7vh;
-	border-radius:50%;
-		
-	font-size: 0;
-	color:#2b3339;
-	text-align:center;
-	letter-spacing:1px;
-	text-decoration:none;
-	
-	transition: all .25s ease-out;
-	
-}
-
-#navbar a:hover{	
-	width:12vw;
-	border-radius:2.5vw;
-	font-size:1.5vw;
-	color:#2b3339;
-	text-align:right;
-	letter-spacing:1px;
-	text-decoration:none;
+#navbar a:hover {
+	background: #80cc80;
 }
 
 /* Site nav colors */
 
-.nav1{ background: #c6acc7;}
-.nav2{ background: #ecb4bf;}
-.nav3{ background: #fdd6b5;}
-.nav4{ background: #fdf3b8;}
-.nav5{ background: #c2e3ec;}
+.nav1 {
+	background: #c6acc7;
+}
+.nav2 {
+	background: #ecb4bf;
+}
+.nav3 {
+	background: #fdd6b5;
+}
+.nav4 {
+	background: #fdf3b8;
+}
+.nav5 {
+	background: #92e3ec;
+}
 
 /* scrollable middle area! */
 
-section{
-	margin-left:16%;
-	width:74%;
+section {
+	margin-left: 16%;
+	width: 74%;
 }
-
 
 /* Articles (blocks of text) */
 
-article{
-	display:block;
-	width:100%;
-	height:100vh;
-	background:#ffffff;
-	overflow:auto;
-	color:#2b3339;
+article {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	background: #ffffff;
+	overflow: auto;
+	color: #2b3339;
 }
-
-#gallery{ 
+#gallery {
 	overflow: visible;
-	}
+}
 
 /* Gallery navigator */
 
-#galnav{
-	z-index:3;
-	position:relative;
-	top:45vh;
-	left:41.8vw;
+#galnav {
+	z-index: 3;
+	position: relative;
+	top: 45vh;
+	left: 41.8vw;
 }
 
 /* Copyright footer */
 
-footer{
-	position:fixed;
-	bottom:0;
-	left:0;
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
 	background: #2f373e;
-	width:16%;
-	font-size:1.8vh;
-	z-index:10;
+	width: 16%;
+	font-size: 1.8vh;
+	z-index: 10;
 }
-
-#footerlogo{
-	position:fixed;
-	bottom:0;
-	right:0;
-	width:50px;
-	height:50px;
+#footerlogo {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
 }
