@@ -3,13 +3,72 @@
 }
 body {
 	margin: 0;
-	height: 100%;
+	height: 100vh;
 	background: #2b3339 url("../images/main/bgtile.png") repeat fixed;
 	font-family: 'PT Sans Narrow';
 	color: #ffffff;
 	text-align: center;
 	letter-spacing: 1px;
 	overflow-x: hidden;
+	overflow-y: hidden;
+}
+body.no-js {
+	overflow-y: auto;
+}
+
+/* Loading screen */
+
+#loadscreen {
+	display: block;
+}
+#textload {
+	display: block;
+	position: relative;
+	z-index: 99;
+}
+#textload h2 {
+	font-size: 15em;
+	margin-bottom: 0px;
+}
+#enterload {
+	display: block;
+	position: relative;
+	margin: auto;
+	z-index: 99;
+	background: #ff9090;
+	width: 15vw;
+	height: 5vh;
+	border: 0;
+	border-radius: 25px;
+	color: #2b3339;
+	font-size: 2em;
+	cursor: pointer;
+}
+#enterload:hover {
+	background: #80cc80;
+}
+#enterload:active {
+	background: #509950;
+}
+#leftload,
+#rightload {
+	display: block;
+	position: fixed;
+	background: #2b3339 url("../images/main/bgtile.png") repeat fixed;
+	width: 50%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+#rightload {
+	margin-left: 50%;
+}
+.noshow {
+	display: none !important;
+}
+#loadscreen.no-js {
+	display: none;
 }
 
 /* Lefthand navigation bar */

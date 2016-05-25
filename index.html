@@ -10,10 +10,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 	<script src="js/smoothscroll.js"></script>
+
 </head>
 
-<body>
+<body class="no-js">
 
+	<!-- loading screen -->
+	<div id="loadscreen" class="no-js">
+		<div id="textload">
+			<p>
+				<h2>Welcome.</h2> </p>
+			<p>It seems you've stumbled upon my personal site.</p>
+		</div>
+		<button id="enterload">loading...</button>
+		<div id="leftload"></div>
+		<div id="rightload"></div>
+
+		<script src="js/loadscreen.js"></script>
+	</div>
 	<!-- left sidebar (nav) start -->
 	<nav>
 
@@ -105,6 +119,8 @@
 
 	<footer> © 2016 Lester Lee
 		<img id="footerlogo" src="images/main/logo.png" alt="logo" /> </footer>
+
+	<script src="js/removejs.js"></script>
 
 </body>
 
