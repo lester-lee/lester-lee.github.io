@@ -16,5 +16,6 @@ $(document).ready(function () {
 			$("#leftload").addClass("noshow");
 		}, 800);
 		$("body").css("overflow-y", "auto");
+		$("#mainscreen").css("display", "block");
 	});
 });
