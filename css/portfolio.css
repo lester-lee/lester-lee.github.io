@@ -10,8 +10,9 @@ body {
 	text-align: center;
 	letter-spacing: 1px;
 	overflow-x: hidden;
-	overflow-y: hidden;
 }
+
+/*
 body.no-js {
 	overflow-y: auto;
 }
@@ -21,8 +22,10 @@ body.no-js {
 #mainscreen.no-js {
 	display: block;
 }
+*/
 
-/* Loading screen */
+
+/* Loading screen 
 
 #loadscreen {
 	display: block;
@@ -76,6 +79,9 @@ body.no-js {
 #loadscreen.no-js {
 	display: none;
 }
+
+*/
+
 
 /* Lefthand navigation bar */
 
