@@ -1,0 +1,160 @@
+body {
+	font-family: 'PT Sans Narrow';
+	margin: 0px;
+	background: #ddd;
+}
+
+/* Navigation menu at top */
+
+#nav {
+	box-sizing: border-box;
+	position: fixed;
+	top: 0px;
+	padding: 0px 10vw;
+	margin: 0px;
+	background: #303030;
+	width: 100vw;
+	height: 8vh;
+}
+#nav li,
+#nav a {
+	box-sizing: border-box;
+	display: inline-block;
+	list-style: none;
+	background: #303030;
+	width: 8vw;
+	height: 8vh;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+#nav a {
+	padding-top: 2.5vh;
+	font-size: 1.5em
+}
+#nav a:hover {
+	background: #5090ff;
+}
+
+/* Intiative List at Left */
+
+#initiative {
+	box-sizing: border-box;
+	position: fixed;
+	top: 15vh;
+	left: .8vw;
+	width: 15vw;
+	border-radius: 10px;
+	background: #303030;
+	color: white;
+	padding: 10px;
+}
+#initiative h3 {
+	margin-bottom: 5px;
+}
+#initiative textarea {
+	resize: none;
+	max-height: 2.5vh;
+	overflow: hidden;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 3px;
+	color: white;
+	background: rgba(255, 255, 255, .2);
+	border: 0px;
+}
+#intiative textarea:active {
+	border-color: #5090ff;
+}
+#num-init {
+	max-width: 2vw;
+}
+#name-init {
+	max-width: 9vw;
+}
+#add-init,
+#sort-init {
+	position: relative;
+	top: -1.1vh;
+	left: .5vw;
+	max-width: 1.5vw;
+	max-height: 1.5vw;
+	border-radius: 5px;
+	background: #5090ff;
+	color: white;
+	text-align: center;
+	border: 0px;
+}
+#add-init:hover,
+#sort-init:hover {
+	cursor: pointer;
+	background: #6db038;
+}
+#sort-init {
+	max-width: 3vw;
+	top: -.2vh;
+	left: 8vw;
+}
+
+/* Characters Section */
+
+#main-battle {
+	box-sizing: border-box;
+	position: fixed;
+	display: block;
+	margin-left: 17vw;
+	margin-top: 11vh;
+	width: 82vw;
+	height: 87vh;
+	border-radius: 25px;
+	overflow: auto;
+}
+
+/* Character Box */
+
+.character {
+	display: inline-block;
+	width: 15vw;
+	height: 30vh;
+	background: #b22222;
+	border: 2px solid #b22222;
+	border-radius: 10px;
+	margin: 20px;
+	color: #fff;
+}
+.character h3,
+.character h4 {
+	margin: 0px 0px 5px 5px;
+}
+.character textarea {
+	box-sizing: border-box;
+	width: 100%;
+	height: 8vh;
+	resize: none;
+	background: white;
+	font-family: 'PT Sans Narrow';
+	font-size: 1.1em;
+	border: 0px;
+}
+.char-stats textarea {
+	width: 25%;
+	height: 2.5vh;
+	border: 0px;
+	padding: 0px;
+	text-align: center;
+	margin-left: .6vw;
+	font-size: 1.3em;
+	overflow: hidden;
+}
+.char-stats {
+	background: white;
+}
+.ac {
+	color: #6db038;
+}
+.hp {
+	color: #b22222;
+}
+.mp {
+	color: #5090ff;
+}
