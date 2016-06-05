@@ -47,7 +47,7 @@ body {
 	border-radius: 10px;
 	background: #303030;
 	color: white;
-	padding: 10px;
+	padding: .5vw;
 }
 #initiative h3 {
 	margin-bottom: 5px;
@@ -67,33 +67,43 @@ body {
 	border-color: #5090ff;
 }
 #num-init {
-	max-width: 2vw;
+	width: 2vw;
 }
 #name-init {
-	max-width: 9vw;
+	width: 8vw;
 }
-#add-init,
-#sort-init {
+.btn-init {
+	box-sizing: border-box;
 	position: relative;
 	top: -1.1vh;
 	left: .5vw;
-	max-width: 1.5vw;
-	max-height: 1.5vw;
+	width: 1.5vw;
+	height: 1.5vw;
 	border-radius: 5px;
 	background: #5090ff;
 	color: white;
 	text-align: center;
 	border: 0px;
+	padding: 0px;
 }
-#add-init:hover,
-#sort-init:hover {
+.btn-init:hover {
 	cursor: pointer;
 	background: #6db038;
 }
-#sort-init {
-	max-width: 3vw;
+#clear-init {
+	float: right;
+	width: 5vw;
 	top: -.2vh;
-	left: 8vw;
+	left: -.6vw;
+}
+#sort-init {
+	width: 3vw;
+	float: right;
+	top: -.2vh;
+	left: -.3vw;
+}
+#error-init {
+	display: none !important;
 }
 
 /* Characters Section */
@@ -102,20 +112,22 @@ body {
 	box-sizing: border-box;
 	position: fixed;
 	display: block;
-	margin-left: 17vw;
-	margin-top: 11vh;
-	width: 82vw;
-	height: 87vh;
+	margin-left: 20vw;
+	margin-top: 9vh;
+	width: 80vw;
+	height: 91vh;
 	border-radius: 25px;
 	overflow: auto;
+	padding-left: 2vw;
 }
 
 /* Character Box */
 
 .character {
 	display: inline-block;
+	vertical-align: top;
 	width: 15vw;
-	height: 30vh;
+	min-height: 30vh;
 	background: #b22222;
 	border: 2px solid #b22222;
 	border-radius: 10px;
@@ -133,7 +145,7 @@ body {
 	resize: none;
 	background: white;
 	font-family: 'PT Sans Narrow';
-	font-size: 1.1em;
+	font-size: 1.8vh;
 	border: 0px;
 }
 .char-stats textarea {
@@ -143,7 +155,7 @@ body {
 	padding: 0px;
 	text-align: center;
 	margin-left: .6vw;
-	font-size: 1.3em;
+	font-size: 2.3vh;
 	overflow: hidden;
 }
 .char-stats {

@@ -9,6 +9,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/tinysort.js"></script>
 </head>
 
 <body>
@@ -18,19 +19,20 @@
 	</ul>
 	<aside id="initiative">
 		<h3>Intiative: 
-		<button id="sort-init">Sort</button></h3>
+		<button id="sort-init" class="btn-init">Sort</button><button id="clear-init" class="btn-init">Clear All</button></h3>
 		<hr>
+		<h3 id="error-init" style="color:#b22222;">Input a number and a name!</h3>
 		<div id="init-head">
 			<textarea id="num-init" placeholder="#"></textarea>
 			<textarea id="name-init" placeholder="Name"></textarea>
-			<button id="add-init">+</button>
+			<button id="add-init" class="btn-init">+</button>
 		</div>
 		<ol id="init-list">
-			<li>11 | Some Long Name</li>
+			<li id="num11">11 | Some Long Name</li>
 		</ol>
 	</aside>
 	<section id="main-battle">
-		<div class="character">
+		<div class="character" id="11char">
 			<h3>Some Scary Monster</h3>
 			<div class="char-stats">
 				<textarea class="ac" placeholder="AC"></textarea>
