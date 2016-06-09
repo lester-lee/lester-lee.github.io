@@ -37,9 +37,9 @@ function addCharBox() {
 	var init = $.trim($('#num-init').val());
 	var charDiv = '<div class="character" id="name' + name + init +
 		'" data-init="init' + init + '">' +
-		'<h3><span class="char-name">' + name + '</span><div class="remove-char" ></div>' +
-		'<div class="dead-check"></div' +
-		'<div class="open-preset" ></div></h3>' +
+		'<h3><span class="char-name">' + name + '</span><input type="button" class="remove-char" ></input>' +
+		'<input type="button" class="dead-check"></input' +
+		'<input type="button" class="open-preset" ></input></h3>' +
 		'<div class="char-stats">' +
 		'<textarea class="ac" placeholder="AC"></textarea>' +
 		'<textarea class="hp" placeholder="HP"></textarea>' +
