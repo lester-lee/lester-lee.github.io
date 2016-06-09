@@ -1,4 +1,18 @@
 var presets = {
+	"Blank": {
+		"name": "Clear",
+		"hp": "",
+		"mp": "",
+		"ac": "",
+		"str": "",
+		"dex": "",
+		"con": "",
+		"int": "",
+		"wis": "",
+		"cha": "",
+		"b_a": "",
+		"note": ""
+	},
 	"Taz": {
 		"name": "Taz",
 		"hp": "17",
@@ -82,5 +96,75 @@ var presets = {
 		"cha": "13",
 		"b_a": "",
 		"note": "PABLODIN"
+	}
+	"Tank": {
+		"name": "Tank",
+		"hp": "27",
+		"mp": "200",
+		"ac": "16",
+		"str": "10",
+		"dex": "11",
+		"con": "16",
+		"int": "9",
+		"wis": "9",
+		"cha": "10",
+		"b_a": "1d8 dmg",
+		"note": ""
+	},
+	"Rogue": {
+		"name": "Rogue",
+		"hp": "21",
+		"mp": "300",
+		"ac": "12",
+		"str": "12",
+		"dex": "16",
+		"con": "9",
+		"int": "12",
+		"wis": "9",
+		"cha": "12",
+		"b_a": "2d4 dmg",
+		"note": ""
+	},
+	"Mage": {
+		"name": "Mage",
+		"hp": "18",
+		"mp": "360",
+		"ac": "12",
+		"str": "9",
+		"dex": "10",
+		"con": "9",
+		"int": "16",
+		"wis": "13",
+		"cha": "12",
+		"b_a": "1d10 dmg",
+		"note": ""
+	},
+	"Warrior": {
+		"name": "Warrior",
+		"hp": "24",
+		"mp": "230",
+		"ac": "13",
+		"str": "16",
+		"dex": "14",
+		"con": "13",
+		"int": "9",
+		"wis": "9",
+		"cha": "10",
+		"b_a": "1d10 dmg",
+		"note": ""
+	},
+	"Cleric": {
+		"name": "Cleric",
+		"hp": "22",
+		"mp": "360",
+		"ac": "13",
+		"str": "10",
+		"dex": "9",
+		"con": "14",
+		"int": "12",
+		"wis": "16",
+		"cha": "9",
+		"b_a": "1d6 dmg, 1d6 heal for 30 mp",
+		"note": ""
 	}
 }
