@@ -96,7 +96,7 @@ var presets = {
 		"cha": "14",
 		"b_a": "",
 		"note": "PABLODIN"
-	}
+	},
 	"Tank": {
 		"name": "Tank",
 		"hp": "27",
