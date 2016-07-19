@@ -30,6 +30,20 @@ h5,
 h6 {
 	font-family: Bitter;
 }
+.green {
+	color: #429f45;
+}
+.small-text {
+	font-size: .6em;
+	float: right;
+}
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	color: #59abe3;
+}
 
 /* Header */
 
@@ -69,7 +83,7 @@ header {
 	font-family: Bitter;
 	font-size: 20px;
 	font-style: italic;
-	color: #59abe3;
+	color: #fff;
 }
 .header-quick-links {
 	display: flex;
@@ -190,8 +204,8 @@ header {
 
 nav {
 	position: relative;
-	border-bottom: 1px solid #bbb;
-	background: #eee;
+	/border-bottom: 1px solid #bbb;
+	/background: #eee;
 	z-index: 99;
 }
 .main-nav {
@@ -399,4 +413,65 @@ footer {
 }
 .collection-grid .product-grid-item {
 	width: 176px;
+}
+
+/* Product Page */
+
+.product {
+	display: flex;
+	padding-top: 10px;
+}
+.product-images {
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+	margin-right: 20px;
+}
+.product-images img {
+	width: 100%;
+}
+.thumbnail {
+	width: 18%;
+	float: left;
+	margin: 1%;
+	margin-top: 0;
+}
+.thumbnail img {
+	flex: 1;
+	width: 100%;
+}
+.active-img {
+	outline: 1px solid #999;
+}
+.product-text {
+	flex: 1;
+}
+.product-text h2,
+.product-text h3,
+.product-text h4 {
+	margin: 0;
+}
+.option p {
+	margin: 0;
+	font-size: .8em;
+	color: #777;
+	padding-left: 8%;
+}
+select {
+	width: 118.9px;
+}
+.add-to-cart {
+	width: 150px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #303030;
+	color: #fff;
+	float: right;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.add-to-cart:hover {
+	background: #555;
 }
