@@ -5,6 +5,7 @@
 	<title>CubeDepot</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Bitter|Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 </head>
 
@@ -112,31 +113,21 @@
 		</div>
 	</nav>
 	<div class="container ctr-h index">
-
-		<div class="carousel-container">
-			<div class="carousel">
-				<img src="https://cdn.shopify.com/s/files/1/0169/0924/products/IMG_3560_1024x1024.jpeg?v=1467046054">
-				<img src="https://cdn.shopify.com/s/files/1/0169/0924/products/IMG_3560_1024x1024.jpeg?v=1467046054">
-				<img src="https://cdn.shopify.com/s/files/1/0169/0924/products/IMG_3560_1024x1024.jpeg?v=1467046054">
-				<img src="https://cdn.shopify.com/s/files/1/0169/0924/products/IMG_3560_1024x1024.jpeg?v=1467046054">
-				<img src="https://cdn.shopify.com/s/files/1/0169/0924/products/IMG_3560_1024x1024.jpeg?v=1467046054">
-			</div>
-			<div class="carousel-nav ctr-h">
-				<div id="crsl0" class="carousel-nav-btn active" data-page="0"></div>
-				<div id="crsl1" class="carousel-nav-btn" data-page="1"></div>
-				<div id="crsl2" class="carousel-nav-btn" data-page="2"></div>
-				<div id="crsl3" class="carousel-nav-btn" data-page="3"></div>
-				<div id="crsl4" class="carousel-nav-btn" data-page="4"></div>
-			</div>
+		<div class="carousel">
+			<div><img src="carouselodd.png"> </div>
+			<div><img src="carouseleven.png"></div>
+			<div><img src="carouselodd.png"> </div>
+			<div><img src="carouseleven.png"></div>
+			<div><img src="carouseleven.png"></div>
 		</div>
-
-		<div class="index-collection-box">
-			<div class="collection-box col1"><img src="stock.jpeg"><img src="stock.jpeg"></div>
-			<div class="collection-box col2"><img src="stock.jpeg"></div>
-			<div class="collection-box col3"><img src="stock.jpeg"><img src="stock.jpeg"><img src="stock.jpeg"></div>
+		<div class="carousel-nav ctr-h">
+			<div id="crsl1" class="carousel-nav-btn active" data-page="1"></div>
+			<div id="crsl2" class="carousel-nav-btn" data-page="2"></div>
+			<div id="crsl3" class="carousel-nav-btn" data-page="3"></div>
+			<div id="crsl4" class="carousel-nav-btn" data-page="4"></div>
+			<div id="crsl5" class="carousel-nav-btn" data-page="5"></div>
 		</div>
-
-		<article>
+		<article class="index-article">
 			<h2>Announcements</h2>
 			<p>
 				- Get 10% off your order with the code "july4th"!
@@ -149,11 +140,19 @@
 				<br> We will be vending at Lexington and Melrose. If you would like to pick up a cube at any of the competitions, send us an email and we will be sure to bring some at the competitions. If you would like to pick up a product at the competitions we won’t be vending at, send us an email letting us know and we will arrange something.</p>
 		</article>
 
+		<div class="index-collection-box">
+			<div class="collection-box col1"><img src="stock.jpeg"><img src="stock.jpeg"></div>
+			<div class="collection-box col2"><img src="stock.jpeg"></div>
+			<div class="collection-box col3"><img src="stock.jpeg"><img src="stock.jpeg"><img src="stock.jpeg"></div>
+		</div>
+
+
 		<div class="index-collection-container">
 			<h2 class="collection-title">Featured</h2>
 			<ul class="index-collection">
 				<li class="product-grid-item">
 					<img src="https://cdn.shopify.com/s/files/1/0169/0924/products/IMG_3560_1024x1024.jpeg?v=1467046054">
+					<div class="product-grid-price">$63.99</div>
 					<div class="product-grid-item-name">Some Cube Name Yes It's Really kinda LOOONGGGGGG</div>
 					<div class="review-stars">*****</div>
 				</li>
@@ -336,6 +335,8 @@
 		</div>
 	</footer>
 
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
 	<script>
 		$(document).ready(function() {
 			//Changing Sticky Header//
@@ -356,21 +357,31 @@
 			});
 
 			//Carousel//
-			var curpage = 0;
+			/*
+			var curpage = 1;
 			var pagewidth = -990;
 			var numpages = 5;
 
 			function rotateCarousel(index) {
-				var curpageID = '#crsl' + index;
+				curpage = index;
+				if (curpage == numpages + 2) {
+					var leftpx = curpage * pagewidth;
+					$('.carousel').css('left', leftpx);
+					console.log('' + curpage);
+					$('.carousel').css('transition-duration', '0s');
+					curpage = 1;
+				}
+				console.log('' + curpage);
+				var curpageID = '#crsl' + curpage;
 				var $curpage = $(curpageID);
 				//change button color
 				$('.carousel-nav-btn').removeClass('active');
 				$curpage.addClass('active');
 				//slide to page
-				var pagenum = $curpage.attr('data-page');
-				var leftpx = pagenum * pagewidth;
-				console.log(leftpx + '');
+				leftpx = curpage * pagewidth;
 				$('.carousel').css('left', leftpx);
+				$('.carousel').css('transition-duration', '0.3s');
+				console.log('' + leftpx);
 			}
 
 			$('.carousel-nav-btn').on('click', function() {
@@ -378,12 +389,22 @@
 				rotateCarousel(curpage);
 			});
 
+			$('.carousel-prev').on('click', function() {
+				rotateCarousel(--curpage);
+			});
+
+			$('.carousel-next').on('click', function() {
+				rotateCarousel(++curpage);
+			});
+
 			var carouselInterval = setInterval(function() {
-				if (curpage > (numpages - 1)) {
-					curpage = 0;
-				}
-				rotateCarousel(curpage++)
+				rotateCarousel(++curpage)
 			}, 7500);
+			*/
+
+			$('.carousel').slick({
+				autoplay: true,
+			});
 		});
 
 	</script>
