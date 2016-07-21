@@ -112,22 +112,9 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="container ctr-h index">
-		<div class="carousel">
-			<div><img src="carouselodd.png"> </div>
-			<div><img src="carouseleven.png"></div>
-			<div><img src="carouselodd.png"> </div>
-			<div><img src="carouseleven.png"></div>
-			<div><img src="carouseleven.png"></div>
-		</div>
-		<div class="carousel-nav ctr-h">
-			<div id="crsl1" class="carousel-nav-btn active" data-page="1"></div>
-			<div id="crsl2" class="carousel-nav-btn" data-page="2"></div>
-			<div id="crsl3" class="carousel-nav-btn" data-page="3"></div>
-			<div id="crsl4" class="carousel-nav-btn" data-page="4"></div>
-			<div id="crsl5" class="carousel-nav-btn" data-page="5"></div>
-		</div>
-		<article class="index-article">
+	<aside>
+		<div class="side-content tab-out" id="side-content1">
+			<div class="side-tab" data-sidenum="1"><img src="megaphone.svg"></div>
 			<h2>Announcements</h2>
 			<p>
 				- Get 10% off your order with the code "july4th"!
@@ -137,8 +124,26 @@
 				<br> 6/25-6/26 Lexington Summer 2016
 				<br> 7/23 Melrose Summer 2016
 				<br> 7/29-7/31 US Nationals 2016
-				<br> We will be vending at Lexington and Melrose. If you would like to pick up a cube at any of the competitions, send us an email and we will be sure to bring some at the competitions. If you would like to pick up a product at the competitions we won’t be vending at, send us an email letting us know and we will arrange something.</p>
-		</article>
+				<br> We will be vending at Lexington and Melrose. If you would like to pick up a cube at any of the competitions, send us an email and we will be sure to bring some at the competitions. If you would like to pick up a product at the competitions we won’t be vending at, send us an email letting us know and we will arrange something. </p>
+		</div>
+	</aside>
+	<div class="container ctr-h index">
+		<div class="carousel">
+			<div class="carousel-item" id="citem1">Free shipping over $10</div>
+			<div class="carousel-item" id="citem2">Full selection of lubes now available!</div>
+			<div class="carousel-item" id="citem3">BLAHBLAHBLAH YESAHASDFASDF</div>
+			<div class="carousel-item" id="citem4">Poowe scooby doo's comin for you</div>
+			<div class="carousel-item" id="citem5">We use anal glide lube l0l</div>
+		</div>
+		<div class="carousel-nav ctr-h">
+			<div id="crsl1" class="carousel-nav-btn active" data-page="1"></div>
+			<div id="crsl2" class="carousel-nav-btn" data-page="2"></div>
+			<div id="crsl3" class="carousel-nav-btn" data-page="3"></div>
+			<div id="crsl4" class="carousel-nav-btn" data-page="4"></div>
+			<div id="crsl5" class="carousel-nav-btn" data-page="5"></div>
+		</div>
+
+		<div class="index-block"><img src="stock.jpeg"></div>
 
 		<div class="index-collection-box">
 			<div class="collection-box col1"><img src="stock.jpeg"><img src="stock.jpeg"></div>
@@ -356,54 +361,15 @@
 				}
 			});
 
-			//Carousel//
-			/*
-			var curpage = 1;
-			var pagewidth = -990;
-			var numpages = 5;
-
-			function rotateCarousel(index) {
-				curpage = index;
-				if (curpage == numpages + 2) {
-					var leftpx = curpage * pagewidth;
-					$('.carousel').css('left', leftpx);
-					console.log('' + curpage);
-					$('.carousel').css('transition-duration', '0s');
-					curpage = 1;
-				}
-				console.log('' + curpage);
-				var curpageID = '#crsl' + curpage;
-				var $curpage = $(curpageID);
-				//change button color
-				$('.carousel-nav-btn').removeClass('active');
-				$curpage.addClass('active');
-				//slide to page
-				leftpx = curpage * pagewidth;
-				$('.carousel').css('left', leftpx);
-				$('.carousel').css('transition-duration', '0.3s');
-				console.log('' + leftpx);
-			}
-
-			$('.carousel-nav-btn').on('click', function() {
-				curpage = $(this).attr('data-page');
-				rotateCarousel(curpage);
-			});
-
-			$('.carousel-prev').on('click', function() {
-				rotateCarousel(--curpage);
-			});
-
-			$('.carousel-next').on('click', function() {
-				rotateCarousel(++curpage);
-			});
-
-			var carouselInterval = setInterval(function() {
-				rotateCarousel(++curpage)
-			}, 7500);
-			*/
-
 			$('.carousel').slick({
 				autoplay: true,
+			});
+
+			$('.side-tab').on('click', function() {
+				var sidenum = $(this).attr('data-sidenum');
+				var sideID = '#side-content' + sidenum;
+				var $side = $(sideID);
+				$side.toggleClass('tab-out');
 			});
 		});
 
