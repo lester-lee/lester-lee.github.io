@@ -621,29 +621,59 @@ aside {
 	width: 285px;
 	background: #fff;
 }
-.side-tab {
+.side-tab-wrapper {
+	position: absolute;
+	top: -1px;
+	left: 284px;
+}
+.side-tab,
+.tab-toggle {
 	background: #c74444;
 	width: 50px;
 	height: 50px;
-	position: absolute;
-	right: -55px;
-	top: -1px;
 	cursor: pointer;
 }
-.side-tab img {
+.side-tab img,
+.tab-toggle img {
 	width: 100%;
 }
-.side-content {
+#side-tab2 {
+	background: orange;
+}
+#side-tab3 {
+	background: #6db038;
+}
+#side-tab4 {
+	background: #59abe3;
+}
+#side-tab5 {
+	background: #303030;
+}
+.side-content-wrapper {
 	box-sizing: border-box;
 	position: relative;
 	left: -100%;
-	border: 1px solid #bbb;
+	border: 1px solid #c74444;
 	border-right: 5px solid #c74444;
 	padding: 0 20px;
 	transition: all .3s ease;
+	background: #fff;
+	height: 60vh;
+}
+.side-content {
+	display: none;
+}
+.show-content {
+	display: block;
 }
 aside h2 {
 	text-align: center;
+}
+.tab-arrow {
+	transition: all 0.4s;
+}
+.rotate {
+	transform: rotate(180deg);
 }
 .tab-out {
 	left: 0px;

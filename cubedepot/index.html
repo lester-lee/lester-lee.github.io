@@ -113,18 +113,53 @@
 		</div>
 	</nav>
 	<aside>
-		<div class="side-content tab-out" id="side-content1">
-			<div class="side-tab" data-sidenum="1"><img src="megaphone.svg"></div>
-			<h2>Announcements</h2>
-			<p>
-				- Get 10% off your order with the code "july4th"!
-				<br> - Check out our new sticker blade remover here!
-				<br> We will be at the following competitions:
-				<br> 6/18-6/19 Slow N Steady Spring 2016
-				<br> 6/25-6/26 Lexington Summer 2016
-				<br> 7/23 Melrose Summer 2016
-				<br> 7/29-7/31 US Nationals 2016
-				<br> We will be vending at Lexington and Melrose. If you would like to pick up a cube at any of the competitions, send us an email and we will be sure to bring some at the competitions. If you would like to pick up a product at the competitions we won’t be vending at, send us an email letting us know and we will arrange something. </p>
+		<div class="side-content-wrapper tab-out">
+			<div class="side-tab-wrapper">
+				<div class="side-tab" id="side-tab1"><img src="megaphone.svg"></div>
+				<div class="side-tab" id="side-tab2"><img src="carticon.svg"></div>
+				<div class="side-tab" id="side-tab3"><img src="megaphone.svg"></div>
+				<div class="side-tab" id="side-tab4"><img src="carticon.svg"></div>
+				<div class="tab-toggle" id="side-tab5"><img class="tab-arrow rotate" src="tabarrow.svg"></div>
+			</div>
+			<div class="side-content show-content" id="side-content1">
+				<h2>Announcements</h2>
+				<p>
+					- Get 10% off your order with the code "july4th"!
+					<br> - Check out our new sticker blade remover here!
+					<br> We will be at the following competitions:
+					<br> 6/18-6/19 Slow N Steady Spring 2016
+					<br> 6/25-6/26 Lexington Summer 2016
+					<br> 7/23 Melrose Summer 2016
+					<br> 7/29-7/31 US Nationals 2016
+					<br> We will be vending at Lexington and Melrose. If you would like to pick up a cube at any of the competitions, send us an email and we will be sure to bring some at the competitions. If you would like to pick up a product at the competitions we won’t be vending at, send us an email letting us know and we will arrange something. </p>
+			</div>
+			<div class="side-content" id="side-content2">
+				<h2>Cart</h2>
+				<p>
+					- Get 10% off your order with the code "july4th"!
+					<br> - Check out our new sticker blade remover here!
+					<br> We wi2</p>
+			</div>
+			<div class="side-content" id="side-content3">
+				<h2>SDFSDFSDF</h2>
+				<p>
+					- Get 10% off your order with the code "july4th"!
+					<br> - Check out our new sticker blade remover here!
+					<br> We will be at the following competitions:
+					<br> 6/18-6/19 Slow N Steady3 </p>
+			</div>
+			<div class="side-content" id="side-content4">
+				<h2>GGGGGGGGG</h2>
+				<p>
+					- Get 10% off your order with the code "july4th"!
+					<br> - Check out our new sticker blade remover here!
+					<br> We will be at the following competitions:
+					<br> 6/18-6/19 Slow N Steady Spring 2016
+					<br> 6/25-6/26 Lexington Summer 2016
+					<br> 7/23 Melrose Summer 2016
+					<br> 7/29-7/31 US Nationals 2016
+					<br> We will be vending at Le4 </p>
+			</div>
 		</div>
 	</aside>
 	<div class="container ctr-h index">
@@ -366,10 +401,27 @@
 			});
 
 			$('.side-tab').on('click', function() {
-				var sidenum = $(this).attr('data-sidenum');
+				$('.side-content').removeClass('show-content');
+				var $side = $('.side-content-wrapper');
+				var sidenum = $(this).attr('id').slice(-1);
 				var sideID = '#side-content' + sidenum;
-				var $side = $(sideID);
+				$(sideID).addClass('show-content');
+				if (sidenum == 1) {
+					$side.css('border-color', '#c74444');
+				} else if (sidenum == 2) {
+					$side.css('border-color', 'orange');
+				} else if (sidenum == 3) {
+					$side.css('border-color', '#6db038');
+				} else {
+					$side.css('border-color', '#59abe3');
+				}
+				$side.addClass('tab-out');
+			});
+
+			$('.tab-toggle').on('click', function() {
+				var $side = $('.side-content-wrapper');
 				$side.toggleClass('tab-out');
+				$('.tab-arrow').toggleClass('rotate');
 			});
 		});
 
