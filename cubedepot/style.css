@@ -545,6 +545,7 @@ footer {
 }
 select {
 	width: 118.9px;
+	font-family: Lato;
 }
 .add-to-cart {
 	width: 150px;
@@ -638,10 +639,10 @@ aside {
 	width: 100%;
 }
 #side-tab2 {
-	background: orange;
+	background: #f89406;
 }
 #side-tab3 {
-	background: #6db038;
+	background: #03A678;
 }
 #side-tab4 {
 	background: #59abe3;
@@ -658,7 +659,7 @@ aside {
 	padding: 0 20px;
 	transition: all .3s ease;
 	background: #fff;
-	height: 60vh;
+	min-height: 50vh;
 }
 .side-content {
 	display: none;
