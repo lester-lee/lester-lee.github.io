@@ -1,6 +1,0 @@
-development:
-  theme_id: 136628998
-  access_token: fcf45654b6e15b5b7e7366f310caa364
-  store: bogeyman-store.myshopify.com
-  bucket_size: 40
-  refill_rate: 2
