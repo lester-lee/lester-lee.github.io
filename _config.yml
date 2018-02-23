@@ -1,0 +1,13 @@
+name: Lester Lee
+markdown: kramdown
+permalink: pretty
+
+sass:
+  style: :expanded
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

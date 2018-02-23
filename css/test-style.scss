@@ -1,0 +1,47 @@
+---
+---
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  padding: 20px 0 100px;
+  font-family: "Crimson Text";
+  line-height: 1.4;
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel";
+}
+
+article {
+  width: 750px;
+  margin: auto;
+}
+
+nav {
+  position: fixed;
+  left: 10px;
+  top: 10vh;
+  font-size: 15px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      color: #aaa;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
