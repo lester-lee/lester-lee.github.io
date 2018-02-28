@@ -1,15 +1,27 @@
 ---
 ---
+
+$h-c: #333;
+$bg-c: #fff;
+$text-c: #333;
+
+//
+@font-face{
+  font-family: Aleo;
+  src: url({{site.baseurl}}/assets/fonts/)
+}
+
 *{
   box-sizing: border-box;
 }
 
 body {
-  background: #fff;
+  background: $bg-c;
+  color: $text-c;
   padding: 20px 0 100px;
   font-family: "Crimson Text";
   line-height: 1.4;
-  font-size: 22px;
+  font-size: 1.2em;
 }
 
 h1,
@@ -18,7 +30,13 @@ h3,
 h4,
 h5,
 h6 {
+  color: $h-c;
   font-family: "Cinzel";
+}
+
+a{
+  text-decoration: none;
+  color: $h-c;
 }
 
 article {
