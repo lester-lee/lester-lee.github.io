@@ -2,4 +2,12 @@
 layout: default
 title: Works
 ---
-Works
+<ul id="galleries">
+  {% for gallery in site.data.galleries %}
+    <li class="gallery"><a href="{{ gallery.url }}">
+      <img src="{{ gallery.thumbnail }}.png" alt="{{ gallery.name }}">
+    </a><br />
+    <span>{{ gallery.name }}</span>
+  </li>
+  {% endfor %}
+</ul>

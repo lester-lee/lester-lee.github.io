@@ -5,6 +5,8 @@ permalink: pretty
 sass:
   style: :expanded
 
+include: ['works']
+
 exclude:
   - Gemfile
   - Gemfile.lock

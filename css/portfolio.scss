@@ -6,6 +6,7 @@
   2. Body
   3. Nav
   4. Content
+  5. Galleries
 */
 /*
   #SETTINGS
@@ -126,4 +127,12 @@ h4,
 h5,
 h6 {
   font-family: $heading-f;
+}
+
+/*
+  #GALLERIES
+*/
+
+#gallery-container{
+  display: flex;
 }
