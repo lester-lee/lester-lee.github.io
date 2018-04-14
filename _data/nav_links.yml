@@ -7,5 +7,3 @@
 - name: Résumé
   url: /resume.pdf
   newtab: True
-- name: Contact
-  url: /contact/
