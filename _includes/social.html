@@ -1,0 +1,5 @@
+<ul id="social">
+  {% for link in site.data.social %}
+  <li><a href="{{ link.url }}"><img src="{{ site.baseurl }}/images/icons/{{ link.icon }}.png" alt="Link to Social Media: {{ link.name }}"></a></li>
+  {% endfor %}
+</ul>

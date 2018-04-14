@@ -58,7 +58,7 @@ nav {
     text-decoration: none;
     color: $text-c;
 
-    &:hover {
+    &:hover, &:active {
       font-weight: bold;
     }
   }
@@ -80,9 +80,10 @@ ul {
     bottom: 0;
     li{
       display: inline-block;
+      margin-right: 5px;
       img {
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
       }
     }
   }

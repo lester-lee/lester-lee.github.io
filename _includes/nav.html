@@ -1,0 +1,10 @@
+<nav>
+  <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/images/logo.png" alt="Lester Lee Logo"></a>
+  <ul id="pages">
+    {% for link in site.data.nav_links %}
+    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+    {% endfor %}
+  </ul>
+  <span id="copyright">© 2017-{{ 'now' | date: "%Y" }}</span>
+  {% include social.html %}
+</nav>

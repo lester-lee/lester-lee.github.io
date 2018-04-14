@@ -14,26 +14,14 @@
 </head>
 
 <body>
-<nav>
-<a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/images/logo.png" alt="Lester Lee Logo"></a>
-<ul>
-	<li><a href="/">Home</a></li>
-	<li><a href="/works/">Works</a></li>
-	<li><a href="/about/">About</a></li>
-	<li><a href="/resume/">Résumé</a></li>
-	<li><a href="/contact/">Contact</a></li>
-</ul>
-<span id="copyright">© 2017-{{ 'now' | date: "%Y" }}</span>
-<ul id="social">
-	<li><a href=""><img src="{{ site.baseurl }}/images/icons/instagram.png" alt="Link to Social Media: Instagram"></a></li>
-	<li><a href=""><img src="{{ site.baseurl }}/images/icons/tumblr.png" alt="Link to Social Media: Tumblr"></a></li>
-	<li><a href=""><img src="{{ site.baseurl }}/images/icons/github.png" alt="Link to Social Media: Github"></a></li>
-</ul>
-</nav>
-<div class="content">
-	{{ content }}
-</div>
 
+	{% include nav.html %}
+
+	<div class="content">
+		{{ content }}
+	</div>
+
+	<script src="{{ site.baseurl }}/js/portfolio.js"></script>
 </body>
 
 </html>

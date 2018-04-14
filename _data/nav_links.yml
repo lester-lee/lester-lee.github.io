@@ -1,0 +1,10 @@
+- name: Home
+  url: /
+- name: Works
+  url: /works/
+- name: About
+  url: /about/
+- name: Résumé
+  url: /resume.pdf
+- name: Contact
+  url: /contact/

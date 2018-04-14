@@ -1,0 +1,12 @@
+- name: Instagram
+  icon: instagram
+  url: /
+- name: Tumblr
+  icon: tumblr
+  url: /
+- name: Github
+  icon: github
+  url: /
+- name: LinkedIn
+  icon: linkedin
+  url: /
