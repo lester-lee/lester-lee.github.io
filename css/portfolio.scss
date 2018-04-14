@@ -1,0 +1,115 @@
+---
+---
+/*
+  #CONTENTS
+  1. Settings
+  2. Body
+  3. Nav
+  4. Content
+*/
+/*
+  #SETTINGS
+*/
+$bg-c: #fff;
+$main-c: #242424;
+$nav-width: 300px;
+$text-c: #242424;
+/*
+  #BODY
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-c;
+  color: $text-c;
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  font-family: 'Crimson Text';
+
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: $bg-c;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $main-c;
+}
+
+/*
+  #NAV
+*/
+nav {
+  position: fixed;
+  left: 0;
+  width: $nav-width;
+  height: 90vh;
+  border-right: 3px solid $main-c;
+  margin: 5vh 0;
+  padding: 100px calc(calc(#{$nav-width} - 100px) / 3);
+  font-family: 'Cinzel';
+  font-size: 24px;
+
+  a {
+    text-decoration: none;
+    color: $text-c;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+#copyright {
+  position: absolute;
+  bottom: 80px;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+
+  &#social{
+    position: absolute;
+    bottom: 0;
+    li{
+      display: inline-block;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+}
+
+/*
+  #CONTENT
+*/
+
+.content {
+  position: absolute;
+  left: $nav-width;
+  width: calc(95vw - #{$nav-width});
+  margin: 1vh 10px;
+  padding: 50px 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cinzel';
+}

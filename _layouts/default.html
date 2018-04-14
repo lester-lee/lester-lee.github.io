@@ -2,17 +2,38 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
+	<link rel="stylesheet" href="{{site.baseurl}}/css/portfolio.css">
 	<link rel="icon" href="{{site.baseurl}}/images/logo.png">
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text' rel='stylesheet' type='text/css'>
 	<title>Lester Lee</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="{{site.baseurl}}/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="{{site.baseurl}}/js/jquery-3.3.1.min.js"></script>
 	<script src="{{site.baseurl}}/js/smoothscroll.js"></script>
 
 </head>
 
-{{content}}
+<body>
+<nav>
+<a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/images/logo.png" alt="Lester Lee Logo"></a>
+<ul>
+	<li><a href="/">Home</a></li>
+	<li><a href="/works/">Works</a></li>
+	<li><a href="/about/">About</a></li>
+	<li><a href="/resume/">Résumé</a></li>
+	<li><a href="/contact/">Contact</a></li>
+</ul>
+<span id="copyright">© 2017-{{ 'now' | date: "%Y" }}</span>
+<ul id="social">
+	<li><a href=""><img src="{{ site.baseurl }}/images/icons/instagram.png" alt="Link to Social Media: Instagram"></a></li>
+	<li><a href=""><img src="{{ site.baseurl }}/images/icons/tumblr.png" alt="Link to Social Media: Tumblr"></a></li>
+	<li><a href=""><img src="{{ site.baseurl }}/images/icons/github.png" alt="Link to Social Media: Github"></a></li>
+</ul>
+</nav>
+<div class="content">
+	{{ content }}
+</div>
+
+</body>
 
 </html>
