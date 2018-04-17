@@ -11,10 +11,11 @@
 /*
   #SETTINGS
 */
+$nav-width: 300px;
 $bg-c: #fff;
 $main-c: #242424;
-$nav-width: 300px;
 $text-c: #242424;
+$accent-c: #e32e1e;
 $heading-f: 'Cinzel', serif;
 $text-f: 'Crimson Text', serif;
 /*
@@ -48,6 +49,14 @@ body::-webkit-scrollbar-thumb {
   font-size: 20px;
 }
 
+a {
+  color: $text-c;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 /*
   #NAV
 */
@@ -61,15 +70,6 @@ nav {
   padding: 100px calc(calc(#{$nav-width} - 100px) / 3);
   font-family: $heading-f;
   font-size: 24px;
-
-  a {
-    text-decoration: none;
-    color: $text-c;
-
-    &:hover, &:active {
-      font-weight: bold;
-    }
-  }
 
   p{
     font-family: $text-f;
@@ -113,7 +113,7 @@ ul {
   left: $nav-width;
   width: calc(95vw - #{$nav-width});
   margin: 1vh 10px;
-  padding: 50px 20px;
+  padding: 40px 20px;
 }
 
 img {
@@ -133,6 +133,26 @@ h6 {
   #GALLERIES
 */
 
+#galleries {
+  display: flex;
+  flex-flow: row wrap;
+  img {
+    border: 1px solid $main-c;
+  }
+  li {
+    width: 150px;
+    height: 200px;
+    // border: 1px solid $main-c;
+    margin: 5px;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+
 #gallery-container{
   display: flex;
+  flex-flow: row wrap;
+  li {
+    max-width: 300px;
+  }
 }

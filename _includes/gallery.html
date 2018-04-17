@@ -1,11 +1,13 @@
 <h1>{{ include.name }}</h1>
 <ul id="gallery-container">
   {% for work in include.data %}
-    <li><a href="#">
+  <li><a href="#">
         <img src="{{ site.baseurl }}/images/works/{{ include.folder }}/{{ work.url }}"
         alt="Artwork Description: {{ work.desc }}">
       </a>
-      <p>{{ work.desc }}</p>
-    </li>
+    <p>{{ work.desc }}</p>
+  </li>
   {% endfor %}
 </ul>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="{{ site.baseurl }}/js/portfolio.js"></script>

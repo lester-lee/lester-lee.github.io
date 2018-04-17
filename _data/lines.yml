@@ -1,6 +1,10 @@
-- name: Gorgon
+- name: untitled
   url: gorgon.png
-  desc: It's a gorgon!
-- name: Rain
+- name: untitled
   url: rain.png
-  desc: It was raining today.
+- name: untitled
+  url: people.png
+- name: untitled
+  url: peopleagain.png
+- name: untitled
+  url: umbrella.png

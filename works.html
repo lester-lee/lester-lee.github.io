@@ -5,9 +5,8 @@ title: Works
 <ul id="galleries">
   {% for gallery in site.data.galleries %}
     <li class="gallery"><a href="{{ gallery.url }}">
-      <img src="{{ gallery.thumbnail }}.png" alt="{{ gallery.name }}">
-    </a><br />
-    <span>{{ gallery.name }}</span>
+      <img src="{{ site.baseurl }}/images/{{ gallery.url }}/thumbnail.png" alt="{{ gallery.name }}">
+    <br />{{ gallery.name }}</a></span>
   </li>
   {% endfor %}
 </ul>
