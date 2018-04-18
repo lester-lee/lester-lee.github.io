@@ -113,7 +113,16 @@ var Game = {
     eventHandler: function(evtType, evt) {
         // When an event is received have the current ui handle it
         if (this._curUIMode) {
-            this._curUIMode.handleInput(evtType, evt);
+            var action = Game.KeyBinding.getInput(evtType, evt).key;
+            switch (action){
+              case "MOVE_UP":
+              case "MOVE_DOWN":
+              case "MOVE_RIGHT":
+              case "MOVE_LEFT":
+                evt.preventDefault();
+                break;
+            }
+            this._curUIMode.handleInput(action);
             Game.refresh();
         }
     },

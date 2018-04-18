@@ -37,8 +37,8 @@ Game.UIMode.titleScreen = {
             display.drawText(0, i + 15, '%b{' + bg + '}> ' + this.titleOptions[i]);
         }
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -81,8 +81,8 @@ Game.UIMode.persistence = {
             display.drawText(0, i + 3, '%b{' + bg + '}> ' + this.persistOptions[i]);
         }
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -202,8 +202,8 @@ Game.UIMode.gameIntro = {
     render: function(display) {
         display.drawText(1, 4, "You remember dying in the year S+979 — nearly 1000 years after artificial intelligence first passed the Turing test. The last thing you remember is your consciousness being uploaded onto SERVER, but your attempts at making contact with the database have failed. All you know is that you are currently drifting through space as the commander of a General Systems Vehicle.\n\n And your name... what did you call yourself?");
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'CONFIRM':
                 var inputHTML = document.getElementById('user-input');
@@ -309,8 +309,8 @@ Game.UIMode.shipScreen = {
     useFuel: function() {
         this.attr.fuel--;
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.attr._curOption++;
@@ -364,8 +364,8 @@ Game.UIMode.shipInventory = {
     refreshInventory: function() {
         this.inventory = Game.UIMode.shipScreen.attr.inventory;
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -422,8 +422,8 @@ Game.UIMode.shipInventoryMenu = {
             display.drawText(0, i + 3, '%b{' + bg + '}> ' + this.itemOptions[i]);
         }
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -470,8 +470,8 @@ Game.UIMode.shipDroneSelection = {
             display.drawText(0, i + 3, '%b{' + bg + '}> ' + this.droneNames[i]);
         }
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -687,8 +687,8 @@ Game.UIMode.navigation = {
         var nextShip = nextSys[0];
         this.travelToTarget(navMap.getNode(nextShip.name));
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.attr._curOption++;
@@ -734,8 +734,8 @@ Game.UIMode.helpScreen = {
         }
 
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'CANCEL':
                 Game.removeUIMode();
@@ -835,8 +835,8 @@ Game.UIMode.inventory = {
         this.equip = !this.equip;
         this.refreshItemIDs();
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -925,8 +925,8 @@ Game.UIMode.itemMenu = {
             display.drawText(0, i + 3, '%b{' + bg + '}> ' + this.itemOptions[i]);
         }
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -993,8 +993,8 @@ Game.UIMode.fabricateMenu = {
             display.drawText(0, i + 3, '%b{' + bg + '}> ' + this.options[i]);
         }
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -1081,8 +1081,8 @@ Game.UIMode.repairMenu = {
         Game.removeUIMode();
         Game.removeUIMode();
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -1164,8 +1164,8 @@ Game.UIMode.heistMenu = {
             display.drawText(0, i + 3, '%b{' + bg + '}> ' + this.menuOptions[i]);
         }
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.attr._abort = false;
@@ -1227,8 +1227,8 @@ Game.UIMode.continue = {
             display.drawText(0, i + 15, '%b{' + bg + '}> ' + this.options[i]);
         }
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
@@ -1302,8 +1302,8 @@ Game.UIMode.droneScreen = {
     getCurDrone: function() {
         return Game.DATASTORE.ENTITY[this.drones[this.curDrone]];
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curDrone++;
@@ -1375,8 +1375,8 @@ Game.UIMode.droneMenu = {
             display.drawText(0, i + 3, '%b{' + bg + '}> ' + this.menuOptions[i]);
         }
     },
-    handleInput: function(inputType, inputData) {
-        var action = Game.KeyBinding.getInput(inputType, inputData).key;
+    handleInput: function(action) {
+
         switch (action) {
             case 'MOVE_DOWN':
                 this.curOption++;
