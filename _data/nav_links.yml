@@ -5,5 +5,4 @@
 - name: About
   url: /about/
 - name: Résumé
-  url: /resume.pdf
-  newtab: True
+  url: /resume/

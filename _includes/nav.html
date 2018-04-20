@@ -2,9 +2,9 @@
   <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/logo.png" alt="Lester Lee Logo"></a>
   <p>Lester Lee / <span class="chinese">李梓润</span></p>
   <ul id="pages">
+    <li><a href="#main-content" style="display:none;">Link to Main Content</a></li>
     {% for link in site.data.nav_links %}
     <li><a
-      {% if link.newtab %} target="_blank" {% endif %}
       href="{{ link.url }}">{{ link.name }}</a></li>
     {% endfor %}
   </ul>

@@ -3,7 +3,7 @@
   {% for work in include.data %}
   <li><a href="#">
         <img src="{{ site.baseurl }}/assets/works/{{ include.folder }}/{{ work.url }}"
-        alt="Artwork Description: {{ work.desc }}">
+        alt="{{ work.desc }}">
       </a>
     <p>{{ work.desc }}</p>
   </li>
