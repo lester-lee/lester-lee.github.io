@@ -1,7 +1,8 @@
 <nav>
+<div id="left-nav">
   <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/logo.png" alt="Lester Lee Logo"></a>
-  <div id="right-nav">
   <p>Lester Lee / <span class="chinese">李梓润</span></p>
+  </div>
   <ul id="pages">
     <li style="display:none;"><a href="#main-content">Link to Main Content</a></li>
     {% for link in site.data.nav_links %}
@@ -9,5 +10,4 @@
       href="{{ link.url }}">{{ link.name }}</a></li>
     {% endfor %}
   </ul>
-  </div>
 </nav>
