@@ -1,13 +1,13 @@
 <nav>
   <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/logo.png" alt="Lester Lee Logo"></a>
+  <div id="right-nav">
   <p>Lester Lee / <span class="chinese">李梓润</span></p>
   <ul id="pages">
-    <li><a href="#main-content" style="display:none;">Link to Main Content</a></li>
+    <li style="display:none;"><a href="#main-content">Link to Main Content</a></li>
     {% for link in site.data.nav_links %}
     <li><a
       href="{{ link.url }}">{{ link.name }}</a></li>
     {% endfor %}
   </ul>
-  <span id="copyright">© 2017-{{ 'now' | date: "%Y" }}</span>
-  {% include social.html %}
+  </div>
 </nav>

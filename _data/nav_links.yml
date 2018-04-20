@@ -1,7 +1,7 @@
 - name: Home
   url: /
-- name: Works
-  url: /works/
+- name: Portfolio
+  url: /portfolio/
 - name: About
   url: /about/
 - name: Résumé

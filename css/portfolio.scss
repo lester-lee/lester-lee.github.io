@@ -12,6 +12,7 @@
   #SETTINGS
 */
 $nav-width: 300px;
+$nav-height: 80px;
 $text-width: 650px;
 // $left-offset: calc(calc(100vw - #{$nav-width} - #{$text-width})/4);
 $left-offset: 0px;
@@ -76,21 +77,49 @@ a {
 */
 nav {
   position: fixed;
-  left: $left-offset;
+  /*
+  top: $left-offset;
   width: $nav-width;
   height: 90vh;
   border-right: 3px solid $main-c;
   margin: 5vh 0;
   padding: 100px calc(calc(#{$nav-width} - 100px) / 3);
+  */
+  top: 0;
+  width: 90vw;
+  height: $nav-height;
+  border-bottom: 3px solid $main-c;
   font-family: $heading-f;
   font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin-left: 5vw;
+  padding: 10px;
+
+  #right-nav{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 30px;
+  }
+
+  img {
+    height: calc(#{$nav-height} - 20px);
+  }
   a {
     color: $text-c;
   }
   p{
     font-family: $text-f;
-    font-size: 16px;
     margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    li {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -128,6 +157,7 @@ ul {
   position: absolute;
   left: calc(#{$left-offset} + #{$nav-width});
   width: calc(95vw - #{$nav-width});
+  top: $nav-height;
   // width: $text-width;
   margin: 1vh 10px;
   padding: 40px 20px;
