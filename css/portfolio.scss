@@ -11,15 +11,16 @@
 /*
   #SETTINGS
 */
-$nav-padding: 28vw;
-$nav-height: 50px;
+$nav-padding: 20vw;
+$nav-height: 60px;
 $text-width: 650px;
-$content-pad: 32vw;
+$content-width: 960px;
 
-$bg-c: #fffffe;
+$bg-c: #fffefc;
 $main-c: #242424;
 $text-c: #242424;
 $accent-c: #be2e2e;
+$hover-c: #7a352c;
 
 $heading-f: 'Cinzel', serif;
 $text-f: 'Crimson Text', serif;
@@ -34,7 +35,7 @@ $text-f: 'Crimson Text', serif;
 body {
   background-color: $bg-c;
   color: $text-c;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.4;
   margin: 0;
   padding: 0;
@@ -51,14 +52,13 @@ body::-webkit-scrollbar-thumb {
 
 .chinese{
   font-family: "FangSong", "仿宋", STFangSong, "华文仿宋", serif;
-  font-size: 20px;
 }
 
 a {
   color: $accent-c;
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
+    color: $hover-c;
   }
 }
 
@@ -82,29 +82,36 @@ a {
 /*
   #NAV
 */
-nav {
-  position: fixed;
+header {
+  position:fixed;
   z-index: 99;
-  background: $bg-c;
   top: 0;
+
   width: 100vw;
-  height: $nav-height;
-  border-bottom: 1.5px solid $main-c;
-  font-size: 24px;
+
+  background: $bg-c;
+  font-size: 1.5em;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px $nav-padding;
-
-  #left-nav{
-    display: flex;
-    flex-flow: row;
-  }
+  align-items: center;
+  width: $content-width;
+  height: $nav-height;
+  padding: 0 10px;
+  margin: 0 auto;
+  border-bottom: 1.5px solid $main-c;
+  box-shadow: 0 3px 3px -3px $main-c;
 
   img {
-    height: calc(#{$nav-height} - 20px);
+    max-height: 32px;
   }
   a {
     color: $text-c;
+    &:hover {
+      color: $accent-c;
+    }
   }
 
   p{
@@ -112,10 +119,10 @@ nav {
   }
 
   ul {
+    font-size: .6em;
     margin: 0;
-    display: flex;
-    justify-content: center;
     li {
+      display: inline-block;
       margin-left: 20px;
     }
   }
@@ -132,16 +139,11 @@ ul {
   padding: 0;
   text-align: left;
 
-  &#social{
-    position: absolute;
-    bottom: 0;
-    li{
-      display: inline-block;
-      margin-right: 5px;
-      img {
-        width: 24px;
-        height: 24px;
-      }
+  &#social li{
+    display: inline-block;
+    margin-right: 5px;
+    img {
+      width: 24px;
     }
   }
 
@@ -152,7 +154,10 @@ ul {
 */
 
 .content {
-  padding: 40px $content-pad;
+  width: $content-width;
+  margin: 0 auto;
+  padding: 50px;
+  padding-left: 100px;
 }
 
 img {
