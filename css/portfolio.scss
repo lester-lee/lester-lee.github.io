@@ -11,11 +11,10 @@
 /*
   #SETTINGS
 */
-$nav-width: 50vw;
+$nav-padding: 28vw;
 $nav-height: 50px;
 $text-width: 650px;
-// $left-offset: calc(calc(100vw - #{$nav-width} - #{$text-width})/4);
-$left-offset: 0px;
+$content-pad: 32vw;
 
 $bg-c: #fffffe;
 $main-c: #242424;
@@ -72,31 +71,29 @@ a {
   padding-left: 15px;
 }
 
+#seal {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 40px;
+  right: 40px;
+}
+
 /*
   #NAV
 */
 nav {
   position: fixed;
-  /*
-  top: $left-offset;
-  width: $nav-width;
-  height: 90vh;
-  border-right: 3px solid $main-c;
-  margin: 5vh 0;
-  padding: 100px calc(calc(#{$nav-width} - 100px) / 3);
-  */
   z-index: 99;
   background: $bg-c;
   top: 0;
-  width: $nav-width;
+  width: 100vw;
   height: $nav-height;
-  border-bottom: 3px solid $main-c;
-  font-family: $heading-f;
+  border-bottom: 1.5px solid $main-c;
   font-size: 24px;
   display: flex;
   justify-content: space-between;
-  margin-left: calc(calc(100vw - #{$nav-width}) / 2);
-  padding: 10px;
+  padding: 10px $nav-padding;
 
   #left-nav{
     display: flex;
@@ -109,10 +106,9 @@ nav {
   a {
     color: $text-c;
   }
+
   p{
-    font-family: $text-f;
     margin: 0;
-    margin-left: 30px;
   }
 
   ul {
@@ -120,7 +116,7 @@ nav {
     display: flex;
     justify-content: center;
     li {
-      margin-right: 20px;
+      margin-left: 20px;
     }
   }
 }
@@ -156,15 +152,7 @@ ul {
 */
 
 .content {
-  position: absolute;
-  // left: calc(#{$left-offset} + #{$nav-width});
-  // left: calc(calc(100vw - #{$nav-width}));
-  width: calc(95vw - #{$nav-width});
-  // top: $nav-height;
-  // width: $text-width;
-  // margin: 1vh 10px;
-  margin: 1vh auto;
-  padding: 40px 20px;
+  padding: 40px $content-pad;
 }
 
 img {
