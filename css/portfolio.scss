@@ -13,7 +13,7 @@
 */
 $nav-padding: 20vw;
 $nav-height: 60px;
-$text-width: 650px;
+$text-width: 700px;
 $content-width: 960px;
 
 $bg-c: #fffefc;
@@ -158,9 +158,14 @@ ul {
 */
 
 .content {
-  width: $content-width;
+  width: $text-width;
   margin: 0 auto;
   padding-top: 50px;
+}
+
+.portfolio {
+  width: $content-width;
+  padding-left: 0;
 }
 
 
@@ -173,9 +178,14 @@ h6 {
   font-family: $heading-f;
 }
 
-p {
+p, .text-list li {
   max-width: $text-width;
 }
+
+.text-list li {
+  font-size: .9em;
+}
+
 
 /*
   #GALLERIES
@@ -186,18 +196,11 @@ p {
   flex-flow: row wrap;
   padding: 0;
 
-  img {
-    // border: 1px solid $main-c;
-    // &:hover{
-    //   border: 1px solid $main-c;
-    // }
-  }
   li {
     position:relative;
     overflow: hidden;
     margin: 10px;
     height: 220px;
-    // border: 1px solid red;
     &:hover {
       color: $accent-c;
     }
