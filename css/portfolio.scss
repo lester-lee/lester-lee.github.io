@@ -79,6 +79,10 @@ a {
   right: 40px;
 }
 
+img {
+  max-width:100%;
+}
+
 /*
   #NAV
 */
@@ -97,7 +101,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: $content-width;
+  max-width: $content-width;
   height: $nav-height;
   padding: 0 10px;
   margin: 0 auto;
@@ -156,13 +160,9 @@ ul {
 .content {
   width: $content-width;
   margin: 0 auto;
-  padding: 50px;
-  padding-left: 100px;
+  padding-top: 50px;
 }
 
-img {
-  max-width: 100%;
-}
 
 h1,
 h2,
@@ -184,16 +184,35 @@ p {
 #galleries {
   display: flex;
   flex-flow: row wrap;
+  padding: 0;
+
   img {
-    border: 1px solid $main-c;
+    // border: 1px solid $main-c;
+    // &:hover{
+    //   border: 1px solid $main-c;
+    // }
   }
   li {
-    width: 150px;
-    height: 200px;
-    // border: 1px solid $main-c;
-    margin: 5px;
-    padding: 20px 0;
-    text-align: center;
+    position:relative;
+    overflow: hidden;
+    margin: 10px;
+    height: 220px;
+    // border: 1px solid red;
+    &:hover {
+      color: $accent-c;
+    }
+  }
+  span {
+    position: absolute;
+    z-index: 98;
+
+    top: 5px;
+    left: 0;
+    padding: 0 3px;
+
+    text-align:right;
+    background: $bg-c;
+
   }
 }
 

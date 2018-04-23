@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Portfolio
+title: Lester Lee
 ---
 <ul id="galleries">
   {% for gallery in site.data.galleries %}
     <li class="gallery"><a href="{{ gallery.url }}">
       <img src="{{ site.baseurl }}/assets/{{ gallery.url }}/thumbnail.png" alt="{{ gallery.name }} Thumbnail">
-      <span>{{ gallery.name }}</span>
     </a>
+    <span>{{ gallery.name }}</span>
   </li>
   {% endfor %}
 </ul>
