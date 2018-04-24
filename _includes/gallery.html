@@ -1,13 +1,15 @@
 <h1>{{ include.name }}</h1>
 <ul id="gallery-container">
   {% for work in include.data %}
-  <li><a href="#">
-        <img src="{{ site.baseurl }}/assets/works/{{ include.folder }}/{{ work.url }}"
-        alt="{{ work.desc }}">
-      </a>
+  <li>
+    <img data-idx="{{ forloop.index }}" src="{{ site.baseurl }}/assets/works/{{ include.folder }}/{{ work.url }}" alt="{{ work.desc }}">
     <p>{{ work.desc }}</p>
   </li>
   {% endfor %}
 </ul>
+
+
+{% if page.photoswipe %} {% include photoswipe.html %} {% endif %}
+
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="{{ site.baseurl }}/js/portfolio.js"></script>

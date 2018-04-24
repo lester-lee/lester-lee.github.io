@@ -9,6 +9,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script async src="{{site.baseurl}}/js/jquery-3.3.1.min.js"></script>
+
+	{% if page.photoswipe %}
+	<link rel="stylesheet" href="{{site.baseurl}}/css/photoswipe.css">
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/default-skin/default-skin.css">
+	<script src="{{site.baseurl}}/js/photoswipe.min.js"></script>
+	<script src="{{site.baseurl}}/js/photoswipe-ui-default.min.js"></script>
+	{% endif %}
+
 </head>
 
 <body>
