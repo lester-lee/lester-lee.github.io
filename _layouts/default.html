@@ -2,19 +2,17 @@
 <html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ page.title }}</title>
+
 	<link rel="stylesheet" href="{{site.baseurl}}/css/portfolio.css">
 	<link rel="icon" href="{{site.baseurl}}/assets/logo.png">
 	<link href='https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text' rel='stylesheet' type='text/css'>
-	<title>{{ page.title }}</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script async src="{{site.baseurl}}/js/jquery-3.3.1.min.js"></script>
 
 	{% if page.photoswipe %}
 	<link rel="stylesheet" href="{{site.baseurl}}/css/photoswipe.css">
 	<link rel="stylesheet" href="{{site.baseurl}}/assets/default-skin/default-skin.css">
-	<script src="{{site.baseurl}}/js/photoswipe.min.js"></script>
-	<script src="{{site.baseurl}}/js/photoswipe-ui-default.min.js"></script>
 	{% endif %}
 
 </head>
@@ -31,6 +29,11 @@
 		<a href="/"><img src="{{ site.baseurl }}/assets/logo_red.png" alt="Lester Lee logo"></a>
 	</footer>
 
+	<script async src="{{site.baseurl}}/js/jquery-3.3.1.min.js"></script>
+	{% if page.photoswipe %}
+	<script src="{{site.baseurl}}/js/photoswipe.min.js"></script>
+	<script src="{{site.baseurl}}/js/photoswipe-ui-default.min.js"></script>
+	{% endif %}
 </body>
 
 </html>
