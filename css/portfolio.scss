@@ -170,7 +170,7 @@ ul {
 .content {
   max-width: $text-width;
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 50px;
 }
 
 .portfolio {
@@ -256,5 +256,9 @@ p, .text-list li {
   }
   #galleries{
     justify-content: flex-start;
+  }
+  .content{
+    padding: 0;
+    padding-top: 50px;
   }
 }
