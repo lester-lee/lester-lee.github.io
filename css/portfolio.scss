@@ -111,6 +111,10 @@ nav {
   border-bottom: 1.5px solid $main-c;
   box-shadow: 0 3px 3px -3px $main-c;
 
+  #portfolio-nav{
+    display: none;
+  }
+
   #nav-logo-img img {
     position: relative;
     top: 5px;
@@ -175,7 +179,6 @@ ul {
 
 .portfolio {
   max-width: $content-width;
-  padding-left: 0;
 }
 
 
@@ -248,11 +251,15 @@ p, .text-list li {
   #nav-logo-img{
     display: none;
   }
+  #portfolio-nav{
+    display: inline-block !important;
+  }
   #nav-logo-text{
     display: block !important;
   }
   #seal{
     display: block !important;
+    background: $bg-c;
   }
   #galleries{
     justify-content: flex-start;

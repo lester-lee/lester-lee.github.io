@@ -6,7 +6,7 @@
   <ul id="pages">
     <li style="display:none;"><a href="#main-content">Link to Main Content</a></li>
     {% for link in site.data.nav_links %}
-    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+    <li id="{{ link.id }}"><a href="{{ link.url }}">{{ link.name }}</a></li>
     {% endfor %}
   </ul>
 </nav>

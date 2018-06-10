@@ -1,5 +1,6 @@
 - name: Portfolio
   url: /
+  id: portfolio-nav
 - name: About
   url: /about/
 - name: Résumé
