@@ -14,8 +14,8 @@
 */
 $nav-padding: 20vw;
 $nav-height: 60px;
-$text-width: 700px;
-$content-width: 960px;
+$text-width: 610px;
+$content-width: 720px;
 
 $bg-c: #fffefc;
 $main-c: #242424;
@@ -171,13 +171,13 @@ ul {
   #CONTENT
 */
 
-.content {
+main {
   max-width: $text-width;
+  padding: 0 20px 100px;
   margin: 0 auto;
-  padding: 50px;
 }
 
-.portfolio {
+main.full, main.portfolio {
   max-width: $content-width;
 }
 
@@ -264,8 +264,10 @@ p, .text-list li {
   #galleries{
     justify-content: flex-start;
   }
-  .content{
-    padding: 0;
-    padding-top: 50px;
+  main{
+    // padding: 50px 0 0;
+  }
+  .portfolio{
+    // padding: 50px;
   }
 }

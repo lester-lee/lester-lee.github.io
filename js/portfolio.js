@@ -1,9 +1,4 @@
 $(document).ready( function() {
-  $("#gallery-container").masonry({
-    itemSelector: 'li',
-    columnWidth: 300
-  });
-
   /* Photoswipe */
   $("#gallery-container li img").on("click", function(){
     console.log($(this));
