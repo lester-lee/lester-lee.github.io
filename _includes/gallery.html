@@ -1,5 +1,5 @@
 <h1>{{ include.name }}</h1>
-<ul id="gallery-container">
+<ul id="gallery-container" data-columns>
   {% for work in include.data %}
   <li>
     <img data-idx="{{ forloop.index }}" src="{{ site.baseurl }}/assets/works/{{ include.folder }}/{{ work.url }}" alt="{{ work.desc }}">
@@ -12,3 +12,4 @@
 {% if page.photoswipe %} {% include photoswipe.html %} {% endif %}
 
 <script src="{{ site.baseurl }}/js/portfolio.js"></script>
+<script src="{{ site.baseurl }}/js/salvattore.min.js"></script>

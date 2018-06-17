@@ -249,6 +249,18 @@ p, .text-list li {
       cursor: pointer;
     }
   }
+  &[data-columns]::before {
+	  content: '3 .column.size-1of3';
+  }
+  .column { float: left; }
+  .size-1of3 {
+    width: 32%;
+    margin: 0 .5%;
+  }
+  img { max-width: 100%; }
+  p {
+    display: none;
+  }
 }
 
 /*
