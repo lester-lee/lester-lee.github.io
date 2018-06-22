@@ -3,12 +3,20 @@ layout: default
 title: Lester Lee
 class: full
 ---
-<ul id="galleries">
-  {% for gallery in site.data.galleries %}
-    <li class="gallery"><a href="{{ gallery.url }}">
-      <img src="{{ site.baseurl }}/assets/{{ gallery.url }}/thumbnail.png" alt="{{ gallery.name }} Thumbnail">
-    </a>
-    <span>{{ gallery.name }}</span>
-  </li>
+{{ site.data.data-works.all-works }}
+<ul id="gallery-container" data-columns>
+  {% for gallery_data in site.data.galleries %}
+    {% assign gallery = site.data[{{ gallery_data.name | downcase }}] %}
+    {% for work in gallery %}
+      <li>
+        <img data-idx="{{ forloop.index }}" src="{{ site.baseurl }}{{ gallery_data.url }}/{{ work.url }}" alt="{{ work.desc }}">
+        <p>{{ work.desc }}</p>
+      </li>
+    {% endfor %}
   {% endfor %}
 </ul>
+
+
+{% include photoswipe.html %}
+<script src="{{ site.baseurl }}/js/portfolio.js"></script>
+<script src="{{ site.baseurl }}/js/salvattore.min.js"></script>
