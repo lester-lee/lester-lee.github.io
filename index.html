@@ -2,6 +2,7 @@
 layout: default
 title: Lester Lee
 class: full
+photoswipe: true
 ---
 <ul id="gallery-container" data-columns>
   {% for work in site.data.all_works %}
@@ -13,5 +14,6 @@ class: full
 </ul>
 
 {% include photoswipe.html %}
+
 <script src="{{ site.baseurl }}/js/portfolio.js"></script>
 <script src="{{ site.baseurl }}/js/salvattore.min.js"></script>
