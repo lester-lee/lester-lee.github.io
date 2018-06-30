@@ -7,7 +7,7 @@ photoswipe: true
 <ul id="gallery-container" data-columns>
   {% for work in site.data.all_works %}
   <li>
-    <img data-idx="{{ forloop.index }}" src="{{ site.baseurl }}/assets/works/{{ work.gallery }}/{{ work.url }}" alt="{{ work.desc }}">
+    <img data-idx="{{ forloop.index }}" src="https://i.imgur.com/{{ work.url | slice: -7, 7 }}.png" alt="{{ work.desc }}">
     <p>{{ work.desc }}</p>
   </li>
   {% endfor %}

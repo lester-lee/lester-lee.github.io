@@ -1,10 +1,15 @@
-- {gallery: containers, name: untitled, url: witchtea.png}
-- {gallery: lines, name: untitled, url: gorgon.png}
-- {gallery: lines, name: untitled, url: rain.png}
-- {gallery: lines, name: untitled, url: people.png}
-- {gallery: lines, name: untitled, url: peopleagain.png}
-- {gallery: lines, name: untitled, url: umbrella.png}
-- {gallery: lines, name: untitled, url: soaprock.png}
-- {gallery: lines, name: untitled, url: trash_compactor.png}
-- {gallery: lines, name: untitled, url: flowerbed.png}
-- {gallery: lines, name: untitled, url: face.png}
+- {gallery: containers, name: untitled, url: 'https://imgur.com/OOcaEh1'}
+- {gallery: lines, name: untitled, url: 'https://imgur.com/c6i5cHk'}
+- {gallery: lines, name: untitled, url: 'https://imgur.com/nx31EBE'}
+- {gallery: lines, name: untitled, url: 'https://imgur.com/AXMw77A'}
+- {gallery: lines, name: untitled, url: 'https://imgur.com/axLKY3B'}
+- {gallery: lines, name: untitled, url: 'https://imgur.com/CJoypkd'}
+- {gallery: lines, name: untitled, url: 'https://imgur.com/vqoG4bO'}
+- {gallery: lines, name: untitled, url: 'https://imgur.com/wbbL3jN'}
+- {gallery: lines, name: untitled, url: 'https://imgur.com/vY8jUKk'}
+- {gallery: lines, name: untitled, url: 'https://imgur.com/mN2tjvC'}
+- {gallery: piece, name: incomplete, url: 'https://imgur.com/ecW0o8r'}
+- {gallery: piece, name: metallurgy, url: 'https://imgur.com/kh5zvXX'}
+- {gallery: piece, name: wooden arm, url: 'https://imgur.com/LDUYzHs'}
+- {gallery: piece, name: portrait, url: 'https://imgur.com/eDNzDah'}
+- {gallery: piece, name: specimin, url: 'https://imgur.com/oUwxInv'}
