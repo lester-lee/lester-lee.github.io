@@ -6,8 +6,11 @@ $(document).ready( function() {
     var pswpElem = $(".pswp")[0];
 
     var images = [];
+    var idx = 0;
+    
     $("#gallery-container li img").each(function(){
       var img = $(this)[0];
+      $(this).attr("data-idx", idx++);
       var imgObj = {
         src: img.src,
         w: img.naturalWidth,
@@ -19,7 +22,7 @@ $(document).ready( function() {
 
 
     var options = {
-      index: $(this).attr("data-idx") - 1,
+      index: $(this).attr("data-idx"),
       shareEl: false
     };
 
