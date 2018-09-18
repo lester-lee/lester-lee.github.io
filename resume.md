@@ -21,7 +21,7 @@ January 2018 – Present
 **IT-Web Intern,** VanEck, _New York, NY_\\
 June 2018 – August 2018
 
-**Full Stack Tech Intern,** Algora LLC, _Williamstown, MA_\\
+**Full Stack Tech Intern,** Algora, PBC., _Williamstown, MA_\\
 January 2018 – March 2018
 
 **Google igniteCS Student Leader,** Williams College, _Williamstown, MA_\\

@@ -2,7 +2,6 @@ $(document).ready( function() {
   /* Photoswipe */
   $("#gallery-container li img").on("click", function(){
     console.log($(this));
-    console.log(gallery);
 
     var pswpElem = $(".pswp")[0];
 
