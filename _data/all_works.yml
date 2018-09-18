@@ -1,15 +1,22 @@
-- {gallery: containers, name: untitled, url: 'https://imgur.com/OOcaEh1'}
-- {gallery: lines, name: untitled, url: 'https://imgur.com/c6i5cHk'}
-- {gallery: lines, name: untitled, url: 'https://imgur.com/nx31EBE'}
-- {gallery: lines, name: untitled, url: 'https://imgur.com/AXMw77A'}
-- {gallery: lines, name: untitled, url: 'https://imgur.com/axLKY3B'}
-- {gallery: lines, name: untitled, url: 'https://imgur.com/CJoypkd'}
-- {gallery: lines, name: untitled, url: 'https://imgur.com/vqoG4bO'}
-- {gallery: lines, name: untitled, url: 'https://imgur.com/wbbL3jN'}
-- {gallery: lines, name: untitled, url: 'https://imgur.com/vY8jUKk'}
-- {gallery: lines, name: untitled, url: 'https://imgur.com/mN2tjvC'}
-- {gallery: piece, name: incomplete, url: 'https://imgur.com/ecW0o8r'}
-- {gallery: piece, name: metallurgy, url: 'https://imgur.com/kh5zvXX'}
-- {gallery: piece, name: wooden arm, url: 'https://imgur.com/LDUYzHs'}
-- {gallery: piece, name: portrait, url: 'https://imgur.com/eDNzDah'}
-- {gallery: piece, name: specimin, url: 'https://imgur.com/oUwxInv'}
+- {desc: Projection (2018). Medium - Digital., gallery: art, name: Projection (2018),
+  url: 'https://imgur.com/SFdCVOr'}
+- {desc: Whispers (2018). Medium - Marker on whiteboard., gallery: art, name: Whispers
+    (2018), url: 'https://imgur.com/PoOgaWi'}
+- {desc: Yellow (2018). Medium - Digital. A questioning of identity., gallery: art,
+  name: Yellow (2018), url: 'https://imgur.com/GWt02Jq'}
+- {desc: Disintegration (2018). Medium - Digital., gallery: art, name: Disintegration
+    (2018), url: 'https://imgur.com/lIuLsFK'}
+- {desc: Reflection (2018). Medium - Pen on paper., gallery: art, name: Reflection
+    (2018), url: 'https://imgur.com/wUALaIF'}
+- {desc: Timepiece (2018). Medium - Marker on paper., gallery: art, name: Timepiece
+    (2018), url: 'https://imgur.com/vRB4kX6'}
+- {desc: incomplete (2018). Medium - Digital., gallery: piece, name: incomplete (2018),
+  url: 'https://imgur.com/ecW0o8r'}
+- {desc: metallurgy (2018). Medium - Digital. I can clearly hear the sound of my parents
+    playing mahjong at night., gallery: piece, name: metallurgy (2018), url: 'https://imgur.com/kh5zvXX'}
+- {desc: wooden arm (2018). Medium - Digital., gallery: piece, name: wooden arm (2018),
+  url: 'https://imgur.com/LDUYzHs'}
+- {desc: portrait (2018). Medium - Digital. Not necessarily a self portrait., gallery: piece,
+  name: portrait (2018), url: 'https://imgur.com/eDNzDah'}
+- {desc: specimen (2018). Medium - Digital. Honestly a very hard word to spell., gallery: piece,
+  name: specimen (2018), url: 'https://imgur.com/oUwxInv'}
