@@ -12,7 +12,8 @@ $(document).ready( function() {
       var imgObj = {
         src: img.src,
         w: img.naturalWidth,
-        h: img.naturalHeight
+        h: img.naturalHeight,
+        title: img.getAttribute('alt')
       };
       images.push(imgObj);
     });
