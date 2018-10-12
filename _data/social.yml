@@ -1,6 +1,3 @@
-- name: Email
-  icon: email
-  url: mailto:lester@lester-lee.com
 - name: Instagram
   icon: instagram
   url: https://www.instagram.com/_lesterlee/
