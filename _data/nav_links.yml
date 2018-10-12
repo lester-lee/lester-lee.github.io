@@ -3,5 +3,5 @@
   id: portfolio-nav
 - name: About
   url: /about/
-- name: Résumé
-  url: /resume/
+- name: CV
+  url: /cv/
