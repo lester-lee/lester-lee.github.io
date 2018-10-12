@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Résumé
+title: CV
 ---
-# Résumé
-[Click here to view the full PDF version.]({{ site.baseurl }}/resume.pdf)
+# CV
+[Click here to view the full PDF version.]({{ site.baseurl }}/cv.pdf)
 
 ## Education
 
@@ -44,10 +44,10 @@ June 2013 - August 2013
 
 ## ADDITIONAL INFORMATION
 
-**Programming Languages:** Python, Java, C#, C++, C, Scala, Assembly(x86)
+**Proficient:** Python, Java
+
+**Familiar with:** C#, C++, C, Scala
 
 **Web:** HTML5, JavaScript, CSS3, SASS, Jinja2, Liquid, Jekyll
 
 **Design:** Adobe Photoshop CC, Adobe Illustrator CC, Paint Tool SAI
-
-**Sales:** Salesforce, Cloudingo, Shopify
