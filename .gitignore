@@ -4,3 +4,4 @@ _site/
 slack/
 assets/works/*/*
 !thumbnail.png
+!preview.png
