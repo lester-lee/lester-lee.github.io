@@ -1,4 +1,6 @@
+{% if include.name %}
 <h1>{{ include.name }}</h1>
+{% endif %}
 <ul id="gallery-container" data-columns>
   {% for work in include.data %}
   <li>
