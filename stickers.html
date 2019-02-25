@@ -6,10 +6,22 @@ class: full
 <ul class="Gallery StickerList">
   {% for work in site.data.stickers %}
   <li>
-    <img data-idx="{{ forloop.index }}" src="{{work.url}}" alt="{{ work.desc }}">
+    <div class="StickerImage">
+      <img data-idx="{{ forloop.index }}" src="{{work.url}}" alt="{{ work.desc }}">
+    </div>
     <p>{{ work.desc }}</p>
   </li>
   {% endfor %}
 </ul>
 
-<script src="{{ site.baseurl }}/js/portfolio.js"></script>
+<h3>Contact</h3>
+<p>1 for $1, 5 for $4; For custom stickers, get in touch!<br>
+  If you would like some stickers, please email me at <a href="mailto:art@lester-lee.com">art@lester-lee.com</a>:</p>
+<p class="Code">
+  SUBJECT: [Stickers]<br>
+  Body:
+  [Name] x [Amount]<br>
+  Example:
+  Reflection x 2,
+  Sleeping Honey x 1
+</p>

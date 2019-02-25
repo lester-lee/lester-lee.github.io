@@ -272,26 +272,29 @@ code {
 }
 
 .StickerList {
+  justify-content: space-between;
   li {
     width: 150px;
-    height: 170px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
+    height: 180px;
     position: relative;
-  }
-  img {
-    display: block;
-    max-height: 150px;
+    text-align: center;
+    margin: 5px;
   }
   p {
     display: block;
+    width: 100%;
     margin: 0;
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
   }
+}
+
+.StickerImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 150px;
 }
 
 /*
