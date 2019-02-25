@@ -1,4 +1,15 @@
 ---
 layout: default
 title: Stickers
+class: full
 ---
+<ul class="Gallery StickerList">
+  {% for work in site.data.stickers %}
+  <li>
+    <img data-idx="{{ forloop.index }}" src="{{work.url}}" alt="{{ work.desc }}">
+    <p>{{ work.desc }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<script src="{{ site.baseurl }}/js/portfolio.js"></script>

@@ -1,7 +1,7 @@
 {% if include.name %}
 <h1>{{ include.name }}</h1>
 {% endif %}
-<ul id="gallery-container" data-columns>
+<ul class="Gallery" data-columns>
   {% for work in include.data %}
   <li>
     <img data-idx="{{ forloop.index }}" src="https://i.imgur.com/{{ work.url | slice: -7, 7 }}.png" alt="{{ work.desc }}">
