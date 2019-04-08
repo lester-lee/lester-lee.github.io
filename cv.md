@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CV
+class: full
 ---
 # CV
 [Click here to view the full PDF version.]({{ site.baseurl }}/cv.pdf)
@@ -17,6 +18,9 @@ June 2015
 ## Experience
 **Teaching Assistant,** Williams College Computer Science Dept., _Williamstown, MA_\\
 January 2018 – Present
+
+**Full Stack Intern,** Pucky, Inc., _New York, NY_\\
+January 2019
 
 **IT-Web Intern,** VanEck, _New York, NY_\\
 June 2018 – August 2018
@@ -45,6 +49,6 @@ June 2013 - August 2013
 
 **Familiar with:** C#, C++, C, Scala
 
-**Web:** HTML5, JavaScript, CSS3, SASS, Jinja2, Liquid, Jekyll
+**Web:** HTML, CSS, JavaScript, jQuery, ReactJS, NodeJS, Express, TypeScript, Jekyll
 
 **Design:** Adobe Photoshop CC, Adobe Illustrator CC, Paint Tool SAI
