@@ -1,14 +1,14 @@
 $(document).ready( function() {
   /* Photoswipe */
-  $("#gallery-container li img").on("click", function(){
+  $(".Gallery li img").on("click", function(){
     console.log($(this));
 
     var pswpElem = $(".pswp")[0];
 
     var images = [];
     var idx = 0;
-    
-    $("#gallery-container li img").each(function(){
+
+    $(".Gallery li img").each(function(){
       var img = $(this)[0];
       $(this).attr("data-idx", idx++);
       var imgObj = {

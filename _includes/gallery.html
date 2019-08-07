@@ -4,7 +4,7 @@
 <ul class="Gallery" data-columns>
   {% for work in include.data %}
   <li>
-    <img data-idx="{{ forloop.index }}" src="https://i.imgur.com/{{ work.url | slice: -7, 7 }}.png" alt="{{ work.desc }}">
+    <img data-idx="{{ forloop.index }}" src="{{ work.url }}" alt="{{ work.desc }}">
     <p>{{ work.desc }}</p>
   </li>
   {% endfor %}
