@@ -4,7 +4,7 @@ title: PIN&#8253;
 ---
 # PIN&#8253;
 
-[![PIN: Who Knows What Where?]({{ site.baseurl }}/assets/works/pin/preview.png)](http://www.lester-lee.com/curious-places/)
+[![PIN: Who Knows What Where?]({{ site.baseurl }}/assets/works/pin/preview.png)](https://www.lester-lee.com/curious-places/)
 
 During Spring 2018, I took a [Human Computer Interaction](https://sites.google.com/williams.edu/csci376-2018/) course at Williams College with Professor [Iris Howley](http://cs.williams.edu/~iris/).
 
