@@ -1,6 +1,9 @@
 - name: Github
   icon: github
   url: https://github.com/lester-lee
+- name: Instagram
+  icon: instagram
+  url: https://www.instagram.com/lesterlee_art
 - name: LinkedIn
   icon: linkedin
   url: https://www.linkedin.com/in/-lesterlee
