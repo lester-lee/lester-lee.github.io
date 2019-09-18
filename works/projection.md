@@ -6,7 +6,7 @@ title: projection
 
 [![Screenshot of projection game]({{site.baseurl}}/assets/works/projection/preview.png)](https://www.lester-lee.com/projection/)
 
-In Fall 2018, I took an art class with [Zak Arctander](http://zakarctander.com/). For my final projection, I created [projection](https://www.lester-lee.com/projection/), an art piece in the style of top-down RPG games.
+In Fall 2018, I took an art class with [Zak Arctander](http://zakarctander.com/). I created [projection](https://www.lester-lee.com/projection/), an art piece in the style of top-down RPG games.
 
 [projection](https://www.lester-lee.com/projection/) explores the constructive and deconstructive nature of language; in what ways do we build worlds with narration? In what ways do we deconstruct worlds? What does our speech project onto the world around us? What place do we have in a world that is constructed by language? How do we cope?
 
