@@ -1,0 +1,14 @@
+@import "variables";
+
+footer {
+  display: none; // Hide on mobile
+  
+  // Position
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+
+  // Size
+  width: $seal-size;
+  height: $seal-size;
+}

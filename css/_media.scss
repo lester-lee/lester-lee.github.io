@@ -1,0 +1,8 @@
+@import "variables";
+
+@media (min-width: 600px){
+  footer {
+    display: block !important;
+    background: $bg-c;
+  }
+}
