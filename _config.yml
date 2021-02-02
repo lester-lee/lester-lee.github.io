@@ -4,6 +4,7 @@ permalink: pretty
 
 sass:
   style: :expanded
+  sass_dir: css
 
 include: ['works']
 
