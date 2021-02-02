@@ -1,0 +1,11 @@
+@import "variables";
+
+// Social media links on About page
+#social li {
+  display: inline-block;
+  margin-right: 5px;
+
+  img {
+    width: 24px;
+  }
+}

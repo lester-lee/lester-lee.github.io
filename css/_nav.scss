@@ -1,12 +1,16 @@
 // Navigation Bar at top
 
 header {
+  // Position
   position: fixed;
   z-index: 99;
   top: 0;
 
+  // Size
   width: 100vw;
+  padding: 0 5%;
 
+  // Colors and Fonts
   background: $bg-c;
   font-size: 1.5em;
 }
@@ -30,14 +34,14 @@ nav {
   // Font
   font-size: .7em;
   a {
-    text-decoration: none;
+    color: $text-c;
   }
 
   // Page Links
   ul {
     li {
       display: inline-block;
-      margin-left: 20px;
+      margin-left: 15px;
     }
   }
 
