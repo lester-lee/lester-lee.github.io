@@ -1,6 +1,22 @@
 @import "variables";
 
 @media (min-width: 600px){
+  // Image / text in Nav bar
+  #nav-logo-img {
+    display: none;
+  }
+  #nav-logo-text {
+    display: block !important;
+  }
+
+  // Portfolio
+  .Portfolio-Item {
+    width: 33%;
+    height: auto;
+    margin: 0 0 10px 0;
+  }
+
+  // Seal at bottom
   footer {
     display: block !important;
     background: $bg-c;

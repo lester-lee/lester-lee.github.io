@@ -35,6 +35,7 @@ nav {
   font-size: .7em;
   a {
     color: $text-c;
+    text-decoration: none;
   }
 
   // Page Links
@@ -48,6 +49,7 @@ nav {
   #nav-logo{
     &-text{
       display: none;
+      font-size: 1.5em;
     }
     &-img img{
       position: relative;

@@ -34,6 +34,12 @@ a {
   }
 }
 
+@for $i from 1 to 6 {
+  h#{$i} {
+    font-family: $heading-f;
+  }
+}
+
 // Lists
 ul {
   padding: 0;
