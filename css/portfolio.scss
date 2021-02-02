@@ -249,9 +249,6 @@ code {
   flex-flow: row wrap;
   li {
     max-width: 250px;
-    &:hover{
-      cursor: pointer;
-    }
   }
   &[data-columns]::before {
 	  content: '3 .column.size-1of3';
