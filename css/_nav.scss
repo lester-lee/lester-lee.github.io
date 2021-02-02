@@ -1,0 +1,54 @@
+// Navigation Bar at top
+
+header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+
+  width: 100vw;
+
+  background: $bg-c;
+  font-size: 1.5em;
+}
+
+nav {
+  // Item Position
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // Size
+  max-width: $content-width;
+  height: $nav-height;
+
+  padding: 0 10px;
+  margin: 0 auto;
+
+  // Border
+  border-bottom: 2px solid $main-c;
+
+  // Font
+  font-size: .7em;
+  a {
+    text-decoration: none;
+  }
+
+  // Page Links
+  ul {
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  #nav-logo{
+    &-text{
+      display: none;
+    }
+    &-img img{
+      position: relative;
+      top: 5px;
+      height: calc(#{$nav-height} - 20px);
+    }
+  }
+}
