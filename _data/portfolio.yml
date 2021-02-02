@@ -1,7 +1,3 @@
-- name: Down to the Wire
-  url: /works/down-to-the-wire/
-- name: PIN‽
-  url: /works/pin/
 - name: Explore WCMA
   url: /works/explore-wcma/
 - name: Info Viz Study
@@ -10,3 +6,7 @@
   url: /works/repetition/
 - name: Projection
   url: /works/projection/
+- name: Down to the Wire
+  url: /works/down-to-the-wire/
+- name: PIN‽
+  url: /works/pin/

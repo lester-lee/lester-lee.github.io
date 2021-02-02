@@ -1,7 +1,13 @@
 ---
+
 layout: default
 title: Lester Lee
 class: full
-photoswipe: true
 ---
-{% include gallery.html data=site.data.index_art %}
+<ul class="Portfolio-List --index">
+  {% for work in site.data.index_art %}
+    <li class="Portfolio-Item">
+      <img src="{{ work.url }}" alt="{{ work.desc }}">
+    </li>
+  {% endfor %}
+</ul>
