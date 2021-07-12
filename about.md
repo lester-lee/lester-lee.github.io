@@ -5,8 +5,6 @@ title: About
 # About
 I am a computer science educator in New York City. My hobbies include reading, making art, and playing video games.
 
-I graduated with a B.A. in Computer Science from Williams College.
-
 CV available upon request.
 
 I can be reached at `contact(at)lester-lee.com`, \\
