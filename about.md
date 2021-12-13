@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 # About
-I am a computer science educator in New York City. My hobbies include reading, making art, and playing video games.
+I am a computer science educator in New York City.
 
 CV available upon request.
 
