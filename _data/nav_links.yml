@@ -1,9 +1,0 @@
-- name: Home
-  url: /
-  id: nav-home
-- name: Portfolio
-  url: /portfolio/
-  id: nav-portfolio
-- name: About
-  url: /about/
-  id: nav-about
