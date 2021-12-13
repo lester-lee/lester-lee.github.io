@@ -1,0 +1,19 @@
+/*#region Index Articles */
+main {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: both mandatory;
+  overflow: auto;
+}
+
+article {
+  height: 100vh;
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*#endregion Index Articles */

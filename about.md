@@ -9,4 +9,3 @@ CV available upon request.
 
 I can be reached at `contact(at)lester-lee.com`, \\
 or on any of the following platforms:
-{% include social.html %}
