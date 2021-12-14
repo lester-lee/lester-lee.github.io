@@ -6,14 +6,75 @@ main {
   overflow: auto;
 }
 
+h1,
+h2 {
+  z-index: 3;
+}
+
 article {
   height: 100vh;
 
   scroll-snap-align: start;
-  scroll-snap-stop: always;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+}
+
+.Portrait {
+  max-width: 50vw;
+  max-height: 75vh;
+  position: absolute;
+  right: 10vw;
+  z-index: 1;
 }
 /*#endregion Index Articles */
+
+/*#region Individual Articles */
+/*
+@mixin frame($bgColor, $frameColor) {
+  background: $bgColor;
+  border: 1px solid $frameColor;
+  border-top-width: 10vh;
+  border-bottom-width: 10vh;
+  border-left-width: 10vw;
+  border-right-width: 10vw;
+}
+*/
+@mixin frame($bgColor, $frameColor) {
+  background: $frameColor;
+  &::after {
+    content: "";
+    background: $bgColor;
+    width: 70vw;
+    height: 65vh;
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+#Welcome {
+  background: $black;
+  color: $yellow;
+}
+
+#TeachCS {
+  @include frame($blue, $white);
+}
+
+#Art {
+  @include frame($red, $black);
+  color: $white;
+}
+
+#Projects {
+  @include frame($white, $yellow);
+  color: $blue;
+}
+
+#Contact {
+  color: $red;
+}
+/*#endregion Individual Articles */
