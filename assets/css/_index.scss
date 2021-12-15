@@ -33,23 +33,13 @@ article {
 /*#endregion Index Articles */
 
 /*#region Individual Articles */
-/*
-@mixin frame($bgColor, $frameColor) {
-  background: $bgColor;
-  border: 1px solid $frameColor;
-  border-top-width: 10vh;
-  border-bottom-width: 10vh;
-  border-left-width: 10vw;
-  border-right-width: 10vw;
-}
-*/
 @mixin frame($bgColor, $frameColor) {
   background: $frameColor;
   &::after {
     content: "";
     background: $bgColor;
     width: 70vw;
-    height: 65vh;
+    height: 60vh;
     position: absolute;
     z-index: 0;
   }
