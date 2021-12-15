@@ -17,10 +17,26 @@ article {
   scroll-snap-align: start;
 
   display: flex;
-  justify-content: center;
   align-items: center;
 
   position: relative;
+}
+
+.Title {
+  width: 50vw;
+  position: absolute;
+  left: 8vw;
+  top: 33vh;
+  text-align: center;
+  font-size: 3em;
+}
+
+/*#endregion Index Articles */
+
+/*#region Drawings */
+.Drawings {
+  display: flex;
+  align-items: center;
 }
 
 .Portrait {
@@ -30,17 +46,33 @@ article {
   right: 10vw;
   z-index: 1;
 }
-/*#endregion Index Articles */
+
+.Speech {
+  max-width: 60vw;
+  max-height: 75vh;
+  position: absolute;
+  right: 35vw;
+  z-index: 1;
+}
+
+/*#endregion Drawings */
 
 /*#region Individual Articles */
+@mixin centerInParent() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin frame($bgColor, $frameColor) {
   background: $frameColor;
   &::after {
+    @include centerInParent();
     content: "";
     background: $bgColor;
     width: 70vw;
     height: 60vh;
-    position: absolute;
     z-index: 0;
   }
 }
