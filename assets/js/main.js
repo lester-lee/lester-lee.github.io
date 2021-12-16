@@ -13,9 +13,17 @@ const COLORS = {
 //#endregion Constants
 
 //-----------------------------
-//#region Smooth Background Transition
+//#region Navigation
 //-----------------------------
-document.querySelectorAll("article").forEach(
-  elem => elem.style.backgroundColor = COLORS[elem.getAttribute("data-color")]
-)
-//#endregion Smooth Background Transition
+/** Smooth scroll when nav link is clicked */
+// From https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+//#endregion Navigation

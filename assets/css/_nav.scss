@@ -1,5 +1,30 @@
 nav {
   position: fixed;
+  bottom: 0;
   width: 100vw;
-  background: #eee8;
+  ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    .NavItem {
+      &:not(:last-child)::after {
+        // Join links with ◆
+        content: "◆";
+        color: $white;
+        margin: 0 1vw;
+      }
+      a {
+        color: $white;
+        text-decoration: none;
+        padding: .2em;
+        font-size: 1.2rem;
+        border: 1px solid #0000;
+      }
+      &.--active a, a:hover {
+        border: 1px solid $white;
+      }
+    }
+  }
 }
