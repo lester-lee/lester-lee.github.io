@@ -27,12 +27,36 @@ article {
   height: 20vh;
   position: absolute;
   left: 8vw;
-  top: 28vh;
+  top: 32vh;
   text-align: center;
   font-size: 3em;
 }
 
 /*#endregion Index Articles */
+
+/*#region Article Descriptions */
+.Description {
+  width: 50vw;
+
+  position: absolute;
+  left: 8vw;
+  top: 55vh;
+  z-index: 2;
+
+  padding: 0.5rem;
+
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+
+    li {
+      flex: 1;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+/*#endregion Article Descriptions */
 
 /*#region Drawings */
 .Drawings {
@@ -85,11 +109,17 @@ article {
 
 #TeachCS {
   @include frame($blue, $white);
+  .Description {
+    background-color: $white;
+  }
 }
 
 #Art {
   @include frame($red, $black);
   color: $white;
+  .Description {
+    background-color: $red;
+  }
 }
 
 #Projects {

@@ -2,43 +2,90 @@
 layout: default
 title: Lester Lee
 ---
+
 <article id="Welcome" data-color="yellow">
   <h1 class="Title">Hi! I'm Lester</h1>
   <ul class="Description"></ul>
   <div class="Drawings">
-    <img class="Speech" src="{{site.baseurl}}/assets/img/portraits/yellow-bubble.png" />
-    <img class="Portrait" src="{{site.baseurl}}/assets/img/portraits/yellow.png" />
+    <img
+      class="Speech"
+      src="{{site.baseurl}}/assets/img/portraits/yellow-bubble.png"
+    />
+    <img
+      class="Portrait"
+      src="{{site.baseurl}}/assets/img/portraits/yellow.png"
+    />
   </div>
 </article>
 <article id="TeachCS" data-color="black">
   <h2 class="Title">I teach computer science</h2>
-  <ul class="Description"></ul>
+  <section class="Description">
+    <p>
+      My materials are publicly available and can be accessed
+      <a href="https://edu.lester-lee.com">here</a>. It's a work in progress;
+      I'm always adding more!
+    </p>
+  </section>
   <div class="Drawings">
-    <img class="Speech" src="{{site.baseurl}}/assets/img/portraits/black-bubble.png" />
-    <img class="Portrait" src="{{site.baseurl}}/assets/img/portraits/black.png" />
+    <img
+      class="Speech"
+      src="{{site.baseurl}}/assets/img/portraits/black-bubble.png"
+    />
+    <img
+      class="Portrait"
+      src="{{site.baseurl}}/assets/img/portraits/black.png"
+    />
   </div>
 </article>
 <article id="Art" data-color="white">
   <h2 class="Title">I like art</h2>
-  <ul class="Description"></ul>
+  <section class="Description">
+    <ul>
+      {% for artwork in site.data.artwork %}
+      <li>
+        <img
+          src="https://res.cloudinary.com/llee/image/upload/c_scale,q_100,w_500/{{artwork.url}}"
+          alt="{{artwork.name}} - {{artwork.desc}}"
+          title="{{artwork.name}} - {{artwork.desc}}"
+        />
+      </li>
+      {% endfor %}
+    </ul>
+    <p>You can see more of my work on <a href="https://www.instagram.com/lesterlee_art">instagram</a>.</p>
+  </section>
   <div class="Drawings">
-    <img class="Speech" src="{{site.baseurl}}/assets/img/portraits/white-bubble.png" />
-    <img class="Portrait" src="{{site.baseurl}}/assets/img/portraits/white.png" />
+    <img
+      class="Speech"
+      src="{{site.baseurl}}/assets/img/portraits/white-bubble.png"
+    />
+    <img
+      class="Portrait"
+      src="{{site.baseurl}}/assets/img/portraits/white.png"
+    />
   </div>
 </article>
 <article id="Projects" data-color="blue">
   <h2 class="Title">I make stuff</h2>
   <ul class="Description"></ul>
   <div class="Drawings">
-    <img class="Speech" src="{{site.baseurl}}/assets/img/portraits/blue-bubble.png" />
-    <img class="Portrait" src="{{site.baseurl}}/assets/img/portraits/blue.png" />
+    <img
+      class="Speech"
+      src="{{site.baseurl}}/assets/img/portraits/blue-bubble.png"
+    />
+    <img
+      class="Portrait"
+      src="{{site.baseurl}}/assets/img/portraits/blue.png"
+    />
   </div>
 </article>
 <article id="Contact" data-color="red">
   <h2 class="Title">Get in touch!</h2>
   <ul class="Description"></ul>
   <div class="Drawings">
-    <img class="Speech" src="{{site.baseurl}}/assets/img/portraits/red-bubble.png" />
+    <img
+      class="Speech"
+      src="{{site.baseurl}}/assets/img/portraits/red-bubble.png"
+    />
     <img class="Portrait" src="{{site.baseurl}}/assets/img/portraits/red.png" />
   </div>
 </article>
