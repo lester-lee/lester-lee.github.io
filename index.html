@@ -51,7 +51,10 @@ title: Lester Lee
       </li>
       {% endfor %}
     </ul>
-    <p>You can see more of my work on <a href="https://www.instagram.com/lesterlee_art">instagram</a>.</p>
+    <p>
+      You can see more of my artwork on
+      <a href="https://www.instagram.com/lesterlee_art">instagram</a>.
+    </p>
   </section>
   <div class="Drawings">
     <img
@@ -66,7 +69,25 @@ title: Lester Lee
 </article>
 <article id="Projects" data-color="blue">
   <h2 class="Title">I make stuff</h2>
-  <ul class="Description"></ul>
+  <section class="Description">
+    <ul>
+      {% for project in site.data.projects %}
+      <li>
+          <a href="{{project.url}}">
+          <img
+            src="{{site.baseurl}}/assets/works/{{project.img}}"
+            alt="{{project.name}} - {{project.desc}}"
+            title="{{project.name}} - {{project.desc}}"
+          />
+        </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <p>
+      You can see more of my projects on
+      <a href="https://www.github.com/lester-lee">github</a>.
+    </p>
+  </section>
   <div class="Drawings">
     <img
       class="Speech"

@@ -1,0 +1,51 @@
+/*#region Individual Articles */
+@mixin centerInParent() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin frame($bgColor, $frameColor) {
+  background: $frameColor;
+  &::after {
+    @include centerInParent();
+    content: "";
+    background: $bgColor;
+    width: 70vw;
+    height: 60vh;
+    z-index: 0;
+  }
+}
+
+@mixin articleColors($text, $bg) {
+  color: $text;
+  .Description {
+    background-color: $bg;
+  }
+}
+
+#Welcome {
+  background: $black;
+  color: $yellow;
+}
+
+#TeachCS {
+  @include frame($blue, $white);
+  @include articleColors($black, $white);
+}
+
+#Art {
+  @include frame($red, $black);
+  @include articleColors($white, $red);
+}
+
+#Projects {
+  @include frame($white, $yellow);
+  @include articleColors($blue, $yellow);
+}
+
+#Contact {
+  color: $red;
+}
+/*#endregion Individual Articles */

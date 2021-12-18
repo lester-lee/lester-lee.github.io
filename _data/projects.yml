@@ -1,0 +1,12 @@
+- name: Explore WCMA
+  img: explore-wcma/thumbnail.png
+  desc: A visualization tool that can be used to explore the artworks of Williams College Museum of Art.
+  url: https://www.lester-lee.com/wcma-viz/
+- name: Projection
+  img: projection/thumbnail.png
+  desc: A minigame (best played with controller) that explores the constructive and deconstructive nature of language, in the context of worldbuilding.
+  url: https://www.lester-lee.com/projection/
+- name: Standards Tracker
+  img: repetition/thumbnail.png
+  desc: A visualization tool that can be used to quickly evaluate student and class mastery of standards.
+  url: https://www.lester-lee.com/student-standards-tracker/
