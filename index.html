@@ -21,9 +21,8 @@ title: Lester Lee
   <h2 class="Title">I teach computer science</h2>
   <section class="Description">
     <p>
-      My materials are publicly available and can be accessed
-      <a href="https://edu.lester-lee.com">here</a>. It's a work in progress;
-      I'm always adding more!
+      I'm currently employed as an educator at a high school in NYC. My materials are publicly available and can be accessed
+      <a href="https://edu.lester-lee.com">here</a>. I'm always happy to chat about education!
     </p>
   </section>
   <div class="Drawings">
@@ -73,14 +72,14 @@ title: Lester Lee
     <ul>
       {% for project in site.data.projects %}
       <li>
-          <a href="{{project.url}}">
+        <a href="{{project.url}}">
           <img
             src="{{site.baseurl}}/assets/works/{{project.img}}"
             alt="{{project.name}} - {{project.desc}}"
             title="{{project.name}} - {{project.desc}}"
           />
         </a>
-        </li>
+      </li>
       {% endfor %}
     </ul>
     <p>

@@ -29,3 +29,12 @@ body {
 img {
   max-width: 100%;
 }
+
+a {
+  color: inherit;
+  font-weight: bold;
+
+  &:hover {
+    font-style: italic;
+  }
+}
