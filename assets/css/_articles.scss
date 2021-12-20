@@ -46,6 +46,6 @@
 }
 
 #Contact {
-  color: $red;
+  @include articleColors($red, $white)
 }
 /*#endregion Individual Articles */

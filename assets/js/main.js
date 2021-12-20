@@ -93,7 +93,7 @@ const transforms = (x, y, elem) => {
   const cX = -(y - box.y - box.height / 2) / constraint;
   const cY = (x - box.x - box.width / 2) / constraint;
 
-  return `perspective(400px) rotateX(${cX}deg) rotateY(${cY}deg)`;
+  return `perspective(600px) rotateX(${cX}deg) rotateY(${cY}deg)`;
 };
 
 const transformElement = (elem, xyelem) => {
@@ -101,9 +101,7 @@ const transformElement = (elem, xyelem) => {
 };
 
 main.addEventListener("mousemove", (e) => {
-  const activePortrait = document.querySelector(
-    `#${activeArticle.id} .Eyes`
-  );
+  const activePortrait = document.querySelector(`#${activeArticle.id} .Eyes`);
   const xy = [e.clientX, e.clientY];
   const position = xy.concat([activePortrait]);
 

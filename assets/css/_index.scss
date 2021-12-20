@@ -22,16 +22,6 @@ article {
   position: relative;
 }
 
-.Title {
-  width: 50vw;
-  height: 20vh;
-  position: absolute;
-  left: 8vw;
-  top: 32vh;
-  text-align: center;
-  font-size: 3em;
-}
-
 /*#endregion Index Articles */
 
 /*#region Article Descriptions */
@@ -40,7 +30,7 @@ article {
 
   position: absolute;
   left: 8vw;
-  top: 55vh;
+  top: 50vh;
   z-index: 2;
 
   padding: 0.5rem;
@@ -65,25 +55,38 @@ article {
 }
 
 .Portrait {
-  max-width: 50vw;
-  max-height: 75vh;
+  width: 25%;
   position: absolute;
-  right: 10vw;
-  z-index: 1;
-}
-
-.Speech {
-  max-width: 60vw;
-  max-height: 75vh;
-  position: absolute;
-  right: 35vw;
+  top: 18%;
+  right: 10%;
   z-index: 1;
 }
 
 .Eyes {
   position: absolute;
-  top: 25vh;
-  right: 23vw;
+  width: 12%;
+  top: 25%;
+  right: 22%;
   z-index: 1;
 }
+
+.Speech {
+  width: 60%;
+  height: 25%;
+  position: absolute;
+  right: 35%;
+  top: 23%;
+  z-index: 1;
+}
+
+.Title {
+  @extend .Speech;
+  width: 50%;
+  right: 42%;
+  padding-top: 3vh;
+  text-align: center;
+  font-size: 3em;
+  z-index: 2;
+}
+
 /*#endregion Drawings */

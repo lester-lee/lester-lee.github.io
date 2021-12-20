@@ -1,0 +1,28 @@
+@media screen and (max-width: 1025px) {
+  .Title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+  .Title,
+  .Speech {
+    font-size: 1.5rem;
+    width: 80vw;
+    top: 12%;
+    left: 10%;
+    height: 10%;
+  }
+  .Portrait {
+    width: 80vw;
+    top: 25%;
+  }
+  .Eyes {
+    width: 30vw;
+    top: 30%;
+    right: 50%;
+  }
+}
