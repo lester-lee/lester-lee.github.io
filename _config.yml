@@ -6,6 +6,6 @@ sass:
   style: :expanded
   sass_dir: assets/css
 
-include: ['works']
+include: ["works"]
 
-exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md', 'CNAME']
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME"]
